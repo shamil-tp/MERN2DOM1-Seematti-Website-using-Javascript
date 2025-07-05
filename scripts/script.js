@@ -1,0 +1,888 @@
+// console.log("hello");
+var banner = document.createElement('marquee');
+banner.innerText = "FREE SHIPPING ALL OVER INDIA     |    100% SECURE PAYMENTS     |    14 DAYS MONEY BACK GURANTEE     |    EASY RETURNS";
+banner.setAttribute("class","marquee");
+banner.classList.add("bg-danger","text-white","py-1");
+// banner.style.padding="5px 0 5px 0";
+
+var nav = document.createElement("div");
+nav.setAttribute("class","nav-bar")
+nav.classList.add("sticky-top")
+nav.style.width = "100%";
+nav.style.backgroundColor = "white";
+nav.style.color = "black";
+nav.style.padding = "10px 20px";
+// nav.innerText = "hello";
+
+var row = document.createElement("div");
+row.setAttribute("class","row");
+nav.append(row);
+
+var navbarLeft = document.createElement("div");
+navbarLeft.setAttribute("class","col-6");
+navbarLeft.style.fontSize = "14px";
+navbarLeft.style.fontWeight = "700"
+navbarLeft.style.display = "flex"
+navbarLeft.style.alignItems = "center"
+navbarLeft.style.backgroundColor = "white";
+navbarLeft.style.justifyContent = "space-between"
+
+var navbarRight = document.createElement("div");
+navbarRight.setAttribute("class","col-6");
+navbarRight.style.display = "flex";
+navbarRight.style.justifyContent = "flex-end"
+navbarRight.style.alignItems = "center"
+navbarRight.style.gap = "10px"
+row.append(navbarLeft,navbarRight);
+
+var navLogo = document.createElement('img');
+navLogo.setAttribute("src", "./images/navbar__logo--image.webp");
+navLogo.setAttribute("class","navbar__logo--image");
+navLogo.style.width = "300px";
+// navLogo.style.height = "100px";
+navbarLeft.append(navLogo);
+
+var navItem1 = document.createElement("div")
+navItem1.setAttribute("class","nav-item")
+navItem1.style.width="25%"
+navItem1.style.padding = "0 0 0 10px"
+navItem1.innerHTML= '<i class="bi bi-bell" style ="color:red;"></i> NEW ARIVALS';
+
+var navItem2 = document.createElement("div")
+navItem2.setAttribute("class","nav-item")
+navItem2.style.width="25%"
+navItem2.style.padding = "0 0 0 10px"
+navItem2.innerHTML= 'SHOP BY FABRIC';
+
+var navItem3 = document.createElement("div")
+navItem3.setAttribute("class","nav-item")
+navItem3.style.width="25%"
+navItem3.style.padding = "0 0 0 10px"
+navItem3.innerHTML= 'SHOP BY CATEGORY';
+// document.getElementById("bell").style.color = "red";
+navbarLeft.append(navItem1,navItem2,navItem3);
+
+var navSearch = document.createElement("input");
+navSearch.setAttribute("class","nav-bar__search");
+navSearch.setAttribute("type","text");
+navSearch.setAttribute("placeholder","Search For Product");
+navSearch.style.border = "1px solid lightgray"
+navSearch.style.height = "70%"
+navSearch.style.width = "40%"
+navbarRight.append(navSearch)
+
+var navItemPrice = document.createElement("div");
+navItemPrice.setAttribute("class","nav-item nav-item__price");
+navItemPrice.innerHTML = '<i class="bi bi-handbag" style="font-weight:800;"></i> &nbsp;$0 / 0.0';
+navItemPrice.style.fontSize = "14";
+navItemPrice.style.fontWeight = "700"
+navbarRight.append(navItemPrice);
+
+var container = document.createElement("div");
+container.setAttribute("class","main-container");
+container.style.padding = "10px 7% 10px 7%"
+
+var heroRow = document.createElement("div");
+heroRow.setAttribute("class","row");
+heroRow.classList.add("py-5")
+container.append(heroRow);
+
+var heroCol = document.createElement("div");
+heroCol.setAttribute("class","col-12");
+heroRow.append(heroCol);
+
+var heroImage = document.createElement("img");
+heroImage.setAttribute("class","hero-section__image");
+heroImage.setAttribute("src","./images/hero-section__image.webp");
+heroImage.style.width = "100%"
+heroCol.append(heroImage);
+
+var typesCardsRow = document.createElement("div");
+typesCardsRow.setAttribute("class","row");
+container.append(typesCardsRow);
+
+var typesCardsCol1 = document.createElement("div");
+typesCardsCol1.setAttribute("class","col-2");
+typesCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol1);
+
+var typesCardsImageContainer1 = document.createElement("div");
+typesCardsImageContainer1.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer1.style.width = "100%";
+typesCardsImageContainer1.style.height = "100%";
+typesCardsCol1.append(typesCardsImageContainer1);
+
+var typesCardsImage1 = document.createElement('img');
+typesCardsImage1.setAttribute("class","types-card__image");
+typesCardsImage1.setAttribute("src","./images/types-card__image1.webp");
+typesCardsImage1.style.width = "100%";
+typesCardsImage1.style.height = "100%";
+typesCardsImageContainer1.append(typesCardsImage1);
+
+var typesCardCaption1 = document.createElement("p");
+typesCardCaption1.setAttribute("class","types-card__image--caption");
+typesCardCaption1.innerText = "All Sarees";
+typesCardCaption1.style.fontStyle = "italic";
+typesCardsCol1.append(typesCardCaption1);
+
+var typesCardsCol2 = document.createElement("div");
+typesCardsCol2.setAttribute("class","col-2");
+typesCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol2);
+
+var typesCardsImageContainer2 = document.createElement("div");
+typesCardsImageContainer2.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer2.style.width = "100%";
+typesCardsImageContainer2.style.height = "100%";
+typesCardsCol2.append(typesCardsImageContainer2);
+
+var typesCardsImage2 = document.createElement('img');
+typesCardsImage2.setAttribute("class","types-card__image");
+typesCardsImage2.setAttribute("src","./images/types-card__image2.webp");
+typesCardsImage2.style.width = "100%";
+typesCardsImage2.style.height = "100%";
+typesCardsImageContainer2.append(typesCardsImage2);
+
+var typesCardCaption2 = document.createElement("p");
+typesCardCaption2.setAttribute("class","types-card__image--caption");
+typesCardCaption2.innerText = "Kancheepuram";
+typesCardCaption2.style.fontStyle = "italic";
+typesCardsCol2.append(typesCardCaption2);
+
+var typesCardsCol3 = document.createElement("div");
+typesCardsCol3.setAttribute("class","col-2");
+typesCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol3);
+
+var typesCardsImageContainer3 = document.createElement("div");
+typesCardsImageContainer3.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer3.style.width = "100%";
+typesCardsImageContainer3.style.height = "100%";
+typesCardsCol3.append(typesCardsImageContainer3);
+
+var typesCardsImage3 = document.createElement('img');
+typesCardsImage3.setAttribute("class","types-card__image");
+typesCardsImage3.setAttribute("src","./images/types-card__image3.webp");
+typesCardsImage3.style.width = "100%";
+typesCardsImage3.style.height = "100%";
+typesCardsImageContainer3.append(typesCardsImage3);
+
+var typesCardCaption3 = document.createElement("p");
+typesCardCaption3.setAttribute("class","types-card__image--caption");
+typesCardCaption3.innerText = "Banarasi";
+typesCardCaption3.style.fontStyle = "italic";
+typesCardsCol3.append(typesCardCaption3);
+
+var typesCardsCol4 = document.createElement("div");
+typesCardsCol4.setAttribute("class","col-2");
+typesCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol4);
+
+var typesCardsImageContainer4 = document.createElement("div");
+typesCardsImageContainer4.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer4.style.width = "100%";
+typesCardsImageContainer4.style.height = "100%";
+typesCardsCol4.append(typesCardsImageContainer4);
+
+var typesCardsImage4 = document.createElement('img');
+typesCardsImage4.setAttribute("class","types-card__image");
+typesCardsImage4.setAttribute("src","./images/types-card__image4.webp");
+typesCardsImage4.style.width = "100%";
+typesCardsImage4.style.height = "100%";
+typesCardsImageContainer4.append(typesCardsImage4);
+
+var typesCardCaption4 = document.createElement("p");
+typesCardCaption4.setAttribute("class","types-card__image--caption");
+typesCardCaption4.innerText = "Tusar Sarees";
+typesCardCaption4.style.fontStyle = "italic";
+typesCardsCol4.append(typesCardCaption4);
+
+var typesCardsCol5 = document.createElement("div");
+typesCardsCol5.setAttribute("class","col-2");
+typesCardsCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol5);
+
+var typesCardsImageContainer5 = document.createElement("div");
+typesCardsImageContainer5.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer5.style.width = "100%";
+typesCardsImageContainer5.style.height = "100%";
+typesCardsCol5.append(typesCardsImageContainer5);
+
+var typesCardsImage5 = document.createElement('img');
+typesCardsImage5.setAttribute("class","types-card__image");
+typesCardsImage5.setAttribute("src","./images/types-card__image5.webp");
+typesCardsImage5.style.width = "100%";
+typesCardsImage5.style.height = "100%";
+typesCardsImageContainer5.append(typesCardsImage5);
+
+var typesCardCaption5 = document.createElement("p");
+typesCardCaption5.setAttribute("class","types-card__image--caption");
+typesCardCaption5.innerText = "Designer";
+typesCardCaption5.style.fontStyle = "italic";
+typesCardsCol5.append(typesCardCaption5);
+
+var typesCardsCol6 = document.createElement("div");
+typesCardsCol6.setAttribute("class","col-2");
+typesCardsCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+typesCardsRow.append(typesCardsCol6);
+
+var typesCardsImageContainer6 = document.createElement("div");
+typesCardsImageContainer6.setAttribute("class","types-cards__image-container");
+typesCardsImageContainer6.style.width = "100%";
+typesCardsImageContainer6.style.height = "100%";
+typesCardsCol6.append(typesCardsImageContainer6);
+
+var typesCardsImage6 = document.createElement('img');
+typesCardsImage6.setAttribute("class","types-card__image");
+typesCardsImage6.setAttribute("src","./images/types-card__image6.webp");
+typesCardsImage6.style.width = "100%";
+typesCardsImage6.style.height = "100%";
+typesCardsImageContainer6.append(typesCardsImage6);
+
+var typesCardCaption6 = document.createElement("p");
+typesCardCaption6.setAttribute("class","types-card__image--caption");
+typesCardCaption6.innerText = "Kerala Sarees";
+typesCardCaption6.style.fontStyle = "italic";
+typesCardsCol6.append(typesCardCaption6);
+
+var occasionRow = document.createElement("div");
+occasionRow.setAttribute("class","row");
+occasionRow.classList.add("py-5");
+container.append(occasionRow);
+
+var occasionCol1 = document.createElement("div");
+occasionCol1.setAttribute("class","col-12");
+occasionRow.append(occasionCol1);
+
+var occasionTitle = document.createElement("div");
+occasionTitle.setAttribute("class","occasion__title-container");
+occasionTitle.classList.add("py-4")
+occasionTitle.style.width = "100%";
+occasionCol1.append(occasionTitle);
+
+var occasionTitleParagraph = document.createElement("p");
+occasionTitleParagraph.setAttribute("class","occasion__title--paragraph");
+occasionTitleParagraph.classList.add("text-danger","text-center");
+occasionTitleParagraph.innerText = "Suitable For Every Occasion";
+occasionTitleParagraph.style.textTransform = "uppercase";
+occasionTitleParagraph.style.fontWeight = "500";
+
+var occasionTitleHeading = document.createElement("h3");
+occasionTitleHeading.setAttribute("class","occasion__title--heading");
+occasionTitleHeading.classList.add("text-center");
+occasionTitleHeading.innerText = "Carry Charm Wherever You Go"
+occasionTitleHeading.style.fontStyle = "italic";
+occasionTitleHeading.style.fontWeight = "600"
+occasionTitle.append(occasionTitleParagraph,occasionTitleHeading);
+
+var occasionCardsCol1 = document.createElement("div");
+occasionCardsCol1.setAttribute("class","col-3");
+occasionCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionRow.append(occasionCardsCol1);
+
+var occasionCardsContainer1 = document.createElement("div");
+occasionCardsContainer1.setAttribute("class","occasion-cards__image-container");
+occasionCardsContainer1.style.width = "100%";
+occasionCardsContainer1.style.height = "100%";
+occasionCardsCol1.append(occasionCardsContainer1);
+
+var occasionCardsImage1 = document.createElement("img");
+occasionCardsImage1.setAttribute("class","occasion-card__image");
+occasionCardsImage1.setAttribute("src","./images/occasion-card__image1.webp");
+occasionCardsImage1.style.width = "100%";
+occasionCardsImage1.style.height = "100%";
+occasionCardsContainer1.append(occasionCardsImage1);
+
+var occasionCardsCol2 = document.createElement("div");
+occasionCardsCol2.setAttribute("class","col-3");
+occasionCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionRow.append(occasionCardsCol2);
+
+var occasionCardsContainer2 = document.createElement("div");
+occasionCardsContainer2.setAttribute("class","occasion-cards__image-container");
+occasionCardsContainer2.style.width = "100%";
+occasionCardsContainer2.style.height = "100%";
+occasionCardsCol2.append(occasionCardsContainer2);
+
+var occasionCardsImage2 = document.createElement("img");
+occasionCardsImage2.setAttribute("class","occasion-card__image");
+occasionCardsImage2.setAttribute("src","./images/occasion-card__image2.webp");
+occasionCardsImage2.style.width = "100%";
+occasionCardsImage2.style.height = "100%";
+occasionCardsContainer2.append(occasionCardsImage2);
+
+var occasionCardsCol3 = document.createElement("div");
+occasionCardsCol3.setAttribute("class","col-3");
+occasionCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionRow.append(occasionCardsCol3);
+
+var occasionCardsContainer3 = document.createElement("div");
+occasionCardsContainer3.setAttribute("class","occasion-cards__image-container");
+occasionCardsContainer3.style.width = "100%";
+occasionCardsContainer3.style.height = "100%";
+occasionCardsCol3.append(occasionCardsContainer3);
+
+var occasionCardsImage3 = document.createElement("img");
+occasionCardsImage3.setAttribute("class","occasion-card__image");
+occasionCardsImage3.setAttribute("src","./images/occasion-card__image3.webp");
+occasionCardsImage3.style.width = "100%";
+occasionCardsImage3.style.height = "100%";
+occasionCardsContainer3.append(occasionCardsImage3);
+
+var occasionCardsCol4 = document.createElement("div");
+occasionCardsCol4.setAttribute("class","col-3");
+occasionCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionRow.append(occasionCardsCol4);
+
+var occasionCardsContainer4 = document.createElement("div");
+occasionCardsContainer4.setAttribute("class","occasion-cards__image-container");
+occasionCardsContainer4.style.width = "100%";
+occasionCardsContainer4.style.height = "100%";
+occasionCardsCol4.append(occasionCardsContainer4);
+
+var occasionCardsImage4 = document.createElement("img");
+occasionCardsImage4.setAttribute("class","occasion-card__image");
+occasionCardsImage4.setAttribute("src","./images/occasion-card__image4.webp");
+occasionCardsImage4.style.width = "100%";
+occasionCardsImage4.style.height = "100%";
+occasionCardsContainer4.append(occasionCardsImage4);
+
+var budgetRow = document.createElement("div");
+budgetRow.setAttribute("class","row");
+budgetRow.classList.add("py-5");
+container.append(budgetRow);
+
+var budgetCol1 = document.createElement("div");
+budgetCol1.setAttribute("class","col-12");
+budgetRow.append(budgetCol1);
+
+var budgetTitle = document.createElement("div");
+budgetTitle.setAttribute("class","budget__title-container");
+budgetTitle.classList.add("py-4")
+budgetTitle.style.width = "100%";
+budgetCol1.append(budgetTitle);
+
+var budgetTitleParagraph = document.createElement("p");
+budgetTitleParagraph.setAttribute("class","budget__title--paragraph");
+budgetTitleParagraph.classList.add("text-danger","text-center");
+budgetTitleParagraph.innerText = "Shop Now";
+budgetTitleParagraph.style.textTransform = "uppercase";
+budgetTitleParagraph.style.fontWeight = "500";
+
+var budgetTitleHeading = document.createElement("h3");
+budgetTitleHeading.setAttribute("class","budget__title--heading");
+budgetTitleHeading.classList.add("text-center");
+budgetTitleHeading.innerText = "Stay on Budget, Shop in Style!"
+budgetTitleHeading.style.fontStyle = "italic";
+budgetTitleHeading.style.fontWeight = "600"
+budgetTitle.append(budgetTitleParagraph,budgetTitleHeading);
+
+var budgetCardsCol1 = document.createElement("div");
+budgetCardsCol1.setAttribute("class","col-2");
+budgetCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol1);
+
+var budgetCardsContainer1 = document.createElement("div");
+budgetCardsContainer1.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer1.style.width = "100%";
+budgetCardsContainer1.style.height = "100%";
+budgetCardsCol1.append(budgetCardsContainer1);
+
+var budgetCardsImage1 = document.createElement("img");
+budgetCardsImage1.setAttribute("class","budget-card__image");
+budgetCardsImage1.setAttribute("src","./images/budget-card__image1.webp");
+budgetCardsImage1.style.width = "100%";
+budgetCardsImage1.style.height = "100%";
+budgetCardsContainer1.append(budgetCardsImage1);
+
+var budgetCardsCol2 = document.createElement("div");
+budgetCardsCol2.setAttribute("class","col-2");
+budgetCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol2);
+
+var budgetCardsContainer2 = document.createElement("div");
+budgetCardsContainer2.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer2.style.width = "100%";
+budgetCardsContainer2.style.height = "100%";
+budgetCardsCol2.append(budgetCardsContainer2);
+
+var budgetCardsImage2 = document.createElement("img");
+budgetCardsImage2.setAttribute("class","budget-card__image");
+budgetCardsImage2.setAttribute("src","./images/budget-card__image2.webp");
+budgetCardsImage2.style.width = "100%";
+budgetCardsImage2.style.height = "100%";
+budgetCardsContainer2.append(budgetCardsImage2);
+
+var budgetCardsCol3 = document.createElement("div");
+budgetCardsCol3.setAttribute("class","col-2");
+budgetCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol3);
+
+var budgetCardsContainer3 = document.createElement("div");
+budgetCardsContainer3.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer3.style.width = "100%";
+budgetCardsContainer3.style.height = "100%";
+budgetCardsCol3.append(budgetCardsContainer3);
+
+var budgetCardsImage3 = document.createElement("img");
+budgetCardsImage3.setAttribute("class","budget-card__image");
+budgetCardsImage3.setAttribute("src","./images/budget-card__image3.webp");
+budgetCardsImage3.style.width = "100%";
+budgetCardsImage3.style.height = "100%";
+budgetCardsContainer3.append(budgetCardsImage3);
+
+var budgetCardsCol4 = document.createElement("div");
+budgetCardsCol4.setAttribute("class","col-2");
+budgetCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol4);
+
+var budgetCardsContainer4 = document.createElement("div");
+budgetCardsContainer4.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer4.style.width = "100%";
+budgetCardsContainer4.style.height = "100%";
+budgetCardsCol4.append(budgetCardsContainer4);
+
+var budgetCardsImage4 = document.createElement("img");
+budgetCardsImage4.setAttribute("class","budget-card__image");
+budgetCardsImage4.setAttribute("src","./images/budget-card__image4.webp");
+budgetCardsImage4.style.width = "100%";
+budgetCardsImage4.style.height = "100%";
+budgetCardsContainer4.append(budgetCardsImage4);
+
+var budgetCardsCol5 = document.createElement("div");
+budgetCardsCol5.setAttribute("class","col-2");
+budgetCardsCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol5);
+
+var budgetCardsContainer5 = document.createElement("div");
+budgetCardsContainer5.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer5.style.width = "100%";
+budgetCardsContainer5.style.height = "100%";
+budgetCardsCol5.append(budgetCardsContainer5);
+
+var budgetCardsImage5 = document.createElement("img");
+budgetCardsImage5.setAttribute("class","budget-card__image");
+budgetCardsImage5.setAttribute("src","./images/budget-card__image5.webp");
+budgetCardsImage5.style.width = "100%";
+budgetCardsImage5.style.height = "100%";
+budgetCardsContainer5.append(budgetCardsImage5);
+
+var budgetCardsCol6 = document.createElement("div");
+budgetCardsCol6.setAttribute("class","col-2");
+budgetCardsCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetRow.append(budgetCardsCol6);
+
+var budgetCardsContainer6 = document.createElement("div");
+budgetCardsContainer6.setAttribute("class","budget-cards__image-container");
+budgetCardsContainer6.style.width = "100%";
+budgetCardsContainer6.style.height = "100%";
+budgetCardsCol6.append(budgetCardsContainer6);
+
+var budgetCardsImage6 = document.createElement("img");
+budgetCardsImage6.setAttribute("class","budget-card__image");
+budgetCardsImage6.setAttribute("src","./images/budget-card__image6.webp");
+budgetCardsImage6.style.width = "100%";
+budgetCardsImage6.style.height = "100%";
+budgetCardsContainer6.append(budgetCardsImage6);
+
+var clothTypeRow = document.createElement("div");
+clothTypeRow.setAttribute("class","row");
+clothTypeRow.classList.add("py-5");
+container.append(clothTypeRow);
+
+var clothTypeCol1 = document.createElement("div");
+clothTypeCol1.setAttribute("class","col-12");
+clothTypeRow.append(clothTypeCol1);
+
+var clothTypeTitle = document.createElement("div");
+clothTypeTitle.setAttribute("class","clothType__title-container");
+clothTypeTitle.classList.add("py-4")
+clothTypeTitle.style.width = "100%";
+clothTypeCol1.append(clothTypeTitle);
+
+var clothTypeTitleParagraph = document.createElement("p");
+clothTypeTitleParagraph.setAttribute("class","clothType__title--paragraph");
+clothTypeTitleParagraph.classList.add("text-danger","text-center");
+clothTypeTitleParagraph.innerText = "featured categories";
+clothTypeTitleParagraph.style.textTransform = "uppercase";
+clothTypeTitleParagraph.style.fontWeight = "500";
+
+var clothTypeTitleHeading = document.createElement("h3");
+clothTypeTitleHeading.setAttribute("class","clothType__title--heading");
+clothTypeTitleHeading.classList.add("text-center");
+clothTypeTitleHeading.innerText = "Celebratory Collection of Festive Outfits"
+clothTypeTitleHeading.style.fontStyle = "italic";
+clothTypeTitleHeading.style.fontWeight = "600"
+clothTypeTitle.append(clothTypeTitleParagraph,clothTypeTitleHeading);
+
+// var clothTypeRow2 = document.createElement("div");
+// clothTypeRow2.setAttribute("class","row");
+// container.append(clothTypeRow2);
+
+var clothTypeCol1 = document.createElement("div");
+clothTypeCol1.setAttribute("class","col-3");
+clothTypeCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol1);
+
+var clothTypeImageContainer1 = document.createElement("div");
+clothTypeImageContainer1.setAttribute("class","clothType__image-container");
+clothTypeImageContainer1.style.width = "100%";
+clothTypeImageContainer1.style.height = "100%";
+clothTypeCol1.append(clothTypeImageContainer1);
+
+var clothTypeImage1 = document.createElement('img');
+clothTypeImage1.setAttribute("class","clothType__image");
+clothTypeImage1.setAttribute("src","./images/clothType-card__image1.webp");
+clothTypeImage1.style.width = "100%";
+clothTypeImage1.style.height = "100%";
+clothTypeImageContainer1.append(clothTypeImage1);
+
+var clothTypeCaption1 = document.createElement("p");
+clothTypeCaption1.setAttribute("class","clothType__image--caption");
+clothTypeCaption1.innerText = "All Sarees";
+clothTypeCaption1.style.fontStyle = "italic";
+clothTypeCaption1.style.fontWeight = "500"
+clothTypeCol1.append(clothTypeCaption1);
+
+var clothTypeCol2 = document.createElement("div");
+clothTypeCol2.setAttribute("class","col-3");
+clothTypeCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol2);
+
+var clothTypeImageContainer2 = document.createElement("div");
+clothTypeImageContainer2.setAttribute("class","clothType__image-container");
+clothTypeImageContainer2.style.width = "100%";
+clothTypeImageContainer2.style.height = "100%";
+clothTypeCol2.append(clothTypeImageContainer2);
+
+var clothTypeImage2 = document.createElement('img');
+clothTypeImage2.setAttribute("class","clothType__image");
+clothTypeImage2.setAttribute("src","./images/clothType-card__image2.webp");
+clothTypeImage2.style.width = "100%";
+clothTypeImage2.style.height = "100%";
+clothTypeImageContainer2.append(clothTypeImage2);
+
+var clothTypeCaption2 = document.createElement("p");
+clothTypeCaption2.setAttribute("class","clothType__image--caption");
+clothTypeCaption2.innerText = "Banarasi Sarees";
+clothTypeCaption2.style.fontStyle = "italic";
+clothTypeCaption2.style.fontWeight = "500"
+clothTypeCol2.append(clothTypeCaption2);
+
+var clothTypeCol3 = document.createElement("div");
+clothTypeCol3.setAttribute("class","col-3");
+clothTypeCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol3);
+
+var clothTypeImageContainer3 = document.createElement("div");
+clothTypeImageContainer3.setAttribute("class","clothType__image-container");
+clothTypeImageContainer3.style.width = "100%";
+clothTypeImageContainer3.style.height = "100%";
+clothTypeCol3.append(clothTypeImageContainer3);
+
+var clothTypeImage3 = document.createElement('img');
+clothTypeImage3.setAttribute("class","clothType__image");
+clothTypeImage3.setAttribute("src","./images/clothType-card__image3.webp");
+clothTypeImage3.style.width = "100%";
+clothTypeImage3.style.height = "100%";
+clothTypeImageContainer3.append(clothTypeImage3);
+
+var clothTypeCaption3 = document.createElement("p");
+clothTypeCaption3.setAttribute("class","clothType__image--caption");
+clothTypeCaption3.innerText = "Linen Sarees";
+clothTypeCaption3.style.fontStyle = "italic";
+clothTypeCaption3.style.fontWeight = "500"
+clothTypeCol3.append(clothTypeCaption3);
+
+var clothTypeCol4 = document.createElement("div");
+clothTypeCol4.setAttribute("class","col-3");
+clothTypeCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol4);
+
+var clothTypeImageContainer4 = document.createElement("div");
+clothTypeImageContainer4.setAttribute("class","clothType__image-container");
+clothTypeImageContainer4.style.width = "100%";
+clothTypeImageContainer4.style.height = "100%";
+clothTypeCol4.append(clothTypeImageContainer4);
+
+var clothTypeImage4 = document.createElement('img');
+clothTypeImage4.setAttribute("class","clothType__image");
+clothTypeImage4.setAttribute("src","./images/clothType-card__image4.webp");
+clothTypeImage4.style.width = "100%";
+clothTypeImage4.style.height = "100%";
+clothTypeImageContainer4.append(clothTypeImage4);
+
+var clothTypeCaption4 = document.createElement("p");
+clothTypeCaption4.setAttribute("class","clothType__image--caption");
+clothTypeCaption4.innerText = "Chiffon Sarees";
+clothTypeCaption4.style.fontStyle = "italic";
+clothTypeCaption4.style.fontWeight = "500"
+clothTypeCol4.append(clothTypeCaption4);
+
+var clothTypeCol5 = document.createElement("div");
+clothTypeCol5.setAttribute("class","col-3");
+clothTypeCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol5);
+
+var clothTypeImageContainer5 = document.createElement("div");
+clothTypeImageContainer5.setAttribute("class","clothType__image-container");
+clothTypeImageContainer5.style.width = "100%";
+clothTypeImageContainer5.style.height = "100%";
+clothTypeCol5.append(clothTypeImageContainer5);
+
+var clothTypeImage5 = document.createElement('img');
+clothTypeImage5.setAttribute("class","clothType__image");
+clothTypeImage5.setAttribute("src","./images/clothType-card__image5.webp");
+clothTypeImage5.style.width = "100%";
+clothTypeImage5.style.height = "100%";
+clothTypeImageContainer5.append(clothTypeImage5);
+
+var clothTypeCaption5 = document.createElement("p");
+clothTypeCaption5.setAttribute("class","clothType__image--caption");
+clothTypeCaption5.innerText = "Kancheepuram";
+clothTypeCaption5.style.fontStyle = "italic";
+clothTypeCaption5.style.fontWeight = "500"
+clothTypeCol5.append(clothTypeCaption5);
+
+var clothTypeCol6 = document.createElement("div");
+clothTypeCol6.setAttribute("class","col-3");
+clothTypeCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol6);
+
+var clothTypeImageContainer6 = document.createElement("div");
+clothTypeImageContainer6.setAttribute("class","clothType__image-container");
+clothTypeImageContainer6.style.width = "100%";
+clothTypeImageContainer6.style.height = "100%";
+clothTypeCol6.append(clothTypeImageContainer6);
+
+var clothTypeImage6 = document.createElement('img');
+clothTypeImage6.setAttribute("class","clothType__image");
+clothTypeImage6.setAttribute("src","./images/clothType-card__image6.webp");
+clothTypeImage6.style.width = "100%";
+clothTypeImage6.style.height = "100%";
+clothTypeImageContainer6.append(clothTypeImage6);
+
+var clothTypeCaption6 = document.createElement("p");
+clothTypeCaption6.setAttribute("class","clothType__image--caption");
+clothTypeCaption6.innerText = "Kanchi Sarees";
+clothTypeCaption6.style.fontStyle = "italic";
+clothTypeCaption6.style.fontWeight = "500"
+clothTypeCol6.append(clothTypeCaption6);
+
+var clothTypeCol7 = document.createElement("div");
+clothTypeCol7.setAttribute("class","col-3");
+clothTypeCol7.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol7);
+
+var clothTypeImageContainer7 = document.createElement("div");
+clothTypeImageContainer7.setAttribute("class","clothType__image-container");
+clothTypeImageContainer7.style.width = "100%";
+clothTypeImageContainer7.style.height = "100%";
+clothTypeCol7.append(clothTypeImageContainer7);
+
+var clothTypeImage7 = document.createElement('img');
+clothTypeImage7.setAttribute("class","clothType__image");
+clothTypeImage7.setAttribute("src","./images/clothType-card__image7.webp");
+clothTypeImage7.style.width = "100%";
+clothTypeImage7.style.height = "100%";
+clothTypeImageContainer7.append(clothTypeImage7);
+
+var clothTypeCaption7 = document.createElement("p");
+clothTypeCaption7.setAttribute("class","clothType__image--caption");
+clothTypeCaption7.innerText = "Soft Silk Sarees";
+clothTypeCaption7.style.fontStyle = "italic";
+clothTypeCaption7.style.fontWeight = "500"
+clothTypeCol7.append(clothTypeCaption7);
+
+var clothTypeCol8 = document.createElement("div");
+clothTypeCol8.setAttribute("class","col-3");
+clothTypeCol8.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol8);
+
+var clothTypeImageContainer8 = document.createElement("div");
+clothTypeImageContainer8.setAttribute("class","clothType__image-container");
+clothTypeImageContainer8.style.width = "100%";
+clothTypeImageContainer8.style.height = "100%";
+clothTypeCol8.append(clothTypeImageContainer8);
+
+var clothTypeImage8 = document.createElement('img');
+clothTypeImage8.setAttribute("class","clothType__image");
+clothTypeImage8.setAttribute("src","./images/clothType-card__image8.webp");
+clothTypeImage8.style.width = "100%";
+clothTypeImage8.style.height = "100%";
+clothTypeImageContainer8.append(clothTypeImage8);
+
+var clothTypeCaption8 = document.createElement("p");
+clothTypeCaption8.setAttribute("class","clothType__image--caption");
+clothTypeCaption8.innerText = "Organza Sarees";
+clothTypeCaption8.style.fontStyle = "italic";
+clothTypeCaption8.style.fontWeight = "500"
+clothTypeCol8.append(clothTypeCaption8);
+
+var clothTypeCol9 = document.createElement("div");
+clothTypeCol9.setAttribute("class","col-3");
+clothTypeCol9.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol9);
+
+var clothTypeImageContainer9 = document.createElement("div");
+clothTypeImageContainer9.setAttribute("class","clothType__image-container");
+clothTypeImageContainer9.style.width = "100%";
+clothTypeImageContainer9.style.height = "100%";
+clothTypeCol9.append(clothTypeImageContainer9);
+
+var clothTypeImage9 = document.createElement('img');
+clothTypeImage9.setAttribute("class","clothType__image");
+clothTypeImage9.setAttribute("src","./images/clothType-card__image9.webp");
+clothTypeImage9.style.width = "100%";
+clothTypeImage9.style.height = "100%";
+clothTypeImageContainer9.append(clothTypeImage9);
+
+var clothTypeCaption9 = document.createElement("p");
+clothTypeCaption9.setAttribute("class","clothType__image--caption");
+clothTypeCaption9.innerText = "Tussar Silk Sarees";
+clothTypeCaption9.style.fontStyle = "italic";
+clothTypeCaption9.style.fontWeight = "500"
+clothTypeCol9.append(clothTypeCaption9);
+
+var clothTypeCol10 = document.createElement("div");
+clothTypeCol10.setAttribute("class","col-3");
+clothTypeCol10.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol10);
+
+var clothTypeImageContainer10 = document.createElement("div");
+clothTypeImageContainer10.setAttribute("class","clothType__image-container");
+clothTypeImageContainer10.style.width = "100%";
+clothTypeImageContainer10.style.height = "100%";
+clothTypeCol10.append(clothTypeImageContainer10);
+
+var clothTypeImage10 = document.createElement('img');
+clothTypeImage10.setAttribute("class","clothType__image");
+clothTypeImage10.setAttribute("src","./images/clothType-card__image10.webp");
+clothTypeImage10.style.width = "100%";
+clothTypeImage10.style.height = "100%";
+clothTypeImageContainer10.append(clothTypeImage10);
+
+var clothTypeCaption10 = document.createElement("p");
+clothTypeCaption10.setAttribute("class","clothType__image--caption");
+clothTypeCaption10.innerText = "Tissue Sarees";
+clothTypeCaption10.style.fontStyle = "italic";
+clothTypeCaption10.style.fontWeight = "500"
+clothTypeCol10.append(clothTypeCaption10);
+
+var clothTypeCol11 = document.createElement("div");
+clothTypeCol11.setAttribute("class","col-3");
+clothTypeCol11.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol11);
+
+var clothTypeImageContainer11 = document.createElement("div");
+clothTypeImageContainer11.setAttribute("class","clothType__image-container");
+clothTypeImageContainer11.style.width = "100%";
+clothTypeImageContainer11.style.height = "100%";
+clothTypeCol11.append(clothTypeImageContainer11);
+
+var clothTypeImage11 = document.createElement('img');
+clothTypeImage11.setAttribute("class","clothType__image");
+clothTypeImage11.setAttribute("src","./images/clothType-card__image11.webp");
+clothTypeImage11.style.width = "100%";
+clothTypeImage11.style.height = "100%";
+clothTypeImageContainer11.append(clothTypeImage11);
+
+var clothTypeCaption11 = document.createElement("p");
+clothTypeCaption11.setAttribute("class","clothType__image--caption");
+clothTypeCaption11.innerText = "Designer Sarees";
+clothTypeCaption11.style.fontStyle = "italic";
+clothTypeCaption11.style.fontWeight = "500"
+clothTypeCol11.append(clothTypeCaption11);
+
+var clothTypeCol12 = document.createElement("div");
+clothTypeCol12.setAttribute("class","col-3");
+clothTypeCol12.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeRow.append(clothTypeCol12);
+
+var clothTypeImageContainer12 = document.createElement("div");
+clothTypeImageContainer12.setAttribute("class","clothType__image-container");
+clothTypeImageContainer12.style.width = "100%";
+clothTypeImageContainer12.style.height = "100%";
+clothTypeCol12.append(clothTypeImageContainer12);
+
+var clothTypeImage12 = document.createElement('img');
+clothTypeImage12.setAttribute("class","clothType__image");
+clothTypeImage12.setAttribute("src","./images/clothType-card__image12.webp");
+clothTypeImage12.style.width = "100%";
+clothTypeImage12.style.height = "100%";
+clothTypeImageContainer12.append(clothTypeImage12);
+
+var clothTypeCaption12 = document.createElement("p");
+clothTypeCaption12.setAttribute("class","clothType__image--caption");
+clothTypeCaption12.innerText = "Chanderi Sarees";
+clothTypeCaption12.style.fontStyle = "italic";
+clothTypeCaption12.style.fontWeight = "500"
+clothTypeCol12.append(clothTypeCaption12);
+
+
+
+
+
+
+
+var weavesRow = document.createElement("div");
+weavesRow.setAttribute("class","row");
+weavesRow.classList.add("py-5");
+container.append(weavesRow);
+
+var weavesCardsCol1 = document.createElement("div");
+weavesCardsCol1.setAttribute("class","col-6");
+weavesCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+weavesRow.append(weavesCardsCol1);
+
+var weavesCardsContainer1 = document.createElement("div");
+weavesCardsContainer1.setAttribute("class","weaves-cards__image-container");
+weavesCardsContainer1.style.width = "100%";
+weavesCardsContainer1.style.height = "100%";
+weavesCardsCol1.append(weavesCardsContainer1);
+
+var weavesCardsImage1 = document.createElement("img");
+weavesCardsImage1.setAttribute("class","weaves-card__image");
+weavesCardsImage1.setAttribute("src","./images/weaves-card__image1.webp");
+weavesCardsImage1.style.width = "100%";
+weavesCardsImage1.style.height = "100%";
+weavesCardsContainer1.append(weavesCardsImage1);
+
+var weavesCardsCol2 = document.createElement("div");
+weavesCardsCol2.setAttribute("class","col-6");
+weavesCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+weavesRow.append(weavesCardsCol2);
+
+var weavesCardsContainer2 = document.createElement("div");
+weavesCardsContainer2.setAttribute("class","weaves-cards__image-container");
+weavesCardsContainer2.style.width = "100%";
+weavesCardsContainer2.style.height = "100%";
+weavesCardsCol2.append(weavesCardsContainer2);
+
+var weavesCardsImage2 = document.createElement("img");
+weavesCardsImage2.setAttribute("class","weaves-card__image");
+weavesCardsImage2.setAttribute("src","./images/weaves-card__image2.webp");
+weavesCardsImage2.style.width = "100%";
+weavesCardsImage2.style.height = "100%";
+weavesCardsContainer2.append(weavesCardsImage2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.body.append(banner,nav,container);
