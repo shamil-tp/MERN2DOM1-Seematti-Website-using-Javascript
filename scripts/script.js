@@ -38,7 +38,7 @@ navbarRight.style.gap = "10px"
 row.append(navbarLeft,navbarRight);
 
 var navLogo = document.createElement('img');
-navLogo.setAttribute("src", "./images/navbar__logo--image.webp");
+navLogo.setAttribute("src", "./images/logo/navbar__logo--image.webp");
 navLogo.setAttribute("class","navbar__logo--image");
 navLogo.style.width = "250px";
 // navLogo.style.height = "100px";
@@ -112,14 +112,14 @@ heroRow.append(heroCol);
 
 var heroImage = document.createElement("img");
 heroImage.setAttribute("class","hero-section__image");
-heroImage.setAttribute("src","./images/hero-section__image.webp");
+heroImage.setAttribute("src","./images/hero/hero-section__image.webp");
 heroImage.classList.add("d-md-flex","d-none");
 heroImage.style.width = "100%"
 heroCol.append(heroImage);
 
 var heroImageMobile = document.createElement("img");
 heroImageMobile.setAttribute("class","hero-section__image--mobile");
-heroImageMobile.setAttribute("src","./images/hero-section__image--mobile.webp");
+heroImageMobile.setAttribute("src","./images/hero/hero-section__image--mobile.webp");
 heroImageMobile.classList.add("d-md-none");
 heroImageMobile.style.width = "100%"
 heroCol.append(heroImageMobile);
@@ -142,7 +142,7 @@ typesCardsCol1.append(typesCardsImageContainer1);
 
 var typesCardsImage1 = document.createElement('img');
 typesCardsImage1.setAttribute("class","types-card__image");
-typesCardsImage1.setAttribute("src","./images/types-card__image1.webp");
+typesCardsImage1.setAttribute("src","./images/type/types-card__image1.webp");
 typesCardsImage1.style.width = "100%";
 typesCardsImage1.style.height = "100%";
 typesCardsImageContainer1.append(typesCardsImage1);
@@ -167,7 +167,7 @@ typesCardsCol2.append(typesCardsImageContainer2);
 
 var typesCardsImage2 = document.createElement('img');
 typesCardsImage2.setAttribute("class","types-card__image");
-typesCardsImage2.setAttribute("src","./images/types-card__image2.webp");
+typesCardsImage2.setAttribute("src","./images/type/types-card__image2.webp");
 typesCardsImage2.style.width = "100%";
 typesCardsImage2.style.height = "100%";
 typesCardsImageContainer2.append(typesCardsImage2);
@@ -192,7 +192,7 @@ typesCardsCol3.append(typesCardsImageContainer3);
 
 var typesCardsImage3 = document.createElement('img');
 typesCardsImage3.setAttribute("class","types-card__image");
-typesCardsImage3.setAttribute("src","./images/types-card__image3.webp");
+typesCardsImage3.setAttribute("src","./images/type/types-card__image3.webp");
 typesCardsImage3.style.width = "100%";
 typesCardsImage3.style.height = "100%";
 typesCardsImageContainer3.append(typesCardsImage3);
@@ -217,7 +217,7 @@ typesCardsCol4.append(typesCardsImageContainer4);
 
 var typesCardsImage4 = document.createElement('img');
 typesCardsImage4.setAttribute("class","types-card__image");
-typesCardsImage4.setAttribute("src","./images/types-card__image4.webp");
+typesCardsImage4.setAttribute("src","./images/type/types-card__image4.webp");
 typesCardsImage4.style.width = "100%";
 typesCardsImage4.style.height = "100%";
 typesCardsImageContainer4.append(typesCardsImage4);
@@ -242,7 +242,7 @@ typesCardsCol5.append(typesCardsImageContainer5);
 
 var typesCardsImage5 = document.createElement('img');
 typesCardsImage5.setAttribute("class","types-card__image");
-typesCardsImage5.setAttribute("src","./images/types-card__image5.webp");
+typesCardsImage5.setAttribute("src","./images/type/types-card__image5.webp");
 typesCardsImage5.style.width = "100%";
 typesCardsImage5.style.height = "100%";
 typesCardsImageContainer5.append(typesCardsImage5);
@@ -267,7 +267,7 @@ typesCardsCol6.append(typesCardsImageContainer6);
 
 var typesCardsImage6 = document.createElement('img');
 typesCardsImage6.setAttribute("class","types-card__image");
-typesCardsImage6.setAttribute("src","./images/types-card__image6.webp");
+typesCardsImage6.setAttribute("src","./images/type/types-card__image6.webp");
 typesCardsImage6.style.width = "100%";
 typesCardsImage6.style.height = "100%";
 typesCardsImageContainer6.append(typesCardsImage6);
@@ -321,7 +321,7 @@ occasionCardsCol1.append(occasionCardsContainer1);
 
 var occasionCardsImage1 = document.createElement("img");
 occasionCardsImage1.setAttribute("class","occasion-card__image");
-occasionCardsImage1.setAttribute("src","./images/occasion-card__image1.webp");
+occasionCardsImage1.setAttribute("src","./images/occasion/occasion-card__image1.webp");
 occasionCardsImage1.style.width = "100%";
 occasionCardsImage1.style.height = "100%";
 occasionCardsContainer1.append(occasionCardsImage1);
@@ -339,7 +339,7 @@ occasionCardsCol2.append(occasionCardsContainer2);
 
 var occasionCardsImage2 = document.createElement("img");
 occasionCardsImage2.setAttribute("class","occasion-card__image");
-occasionCardsImage2.setAttribute("src","./images/occasion-card__image2.webp");
+occasionCardsImage2.setAttribute("src","./images/occasion/occasion-card__image2.webp");
 occasionCardsImage2.style.width = "100%";
 occasionCardsImage2.style.height = "100%";
 occasionCardsContainer2.append(occasionCardsImage2);
@@ -357,7 +357,7 @@ occasionCardsCol3.append(occasionCardsContainer3);
 
 var occasionCardsImage3 = document.createElement("img");
 occasionCardsImage3.setAttribute("class","occasion-card__image");
-occasionCardsImage3.setAttribute("src","./images/occasion-card__image3.webp");
+occasionCardsImage3.setAttribute("src","./images/occasion/occasion-card__image3.webp");
 occasionCardsImage3.style.width = "100%";
 occasionCardsImage3.style.height = "100%";
 occasionCardsContainer3.append(occasionCardsImage3);
@@ -375,7 +375,7 @@ occasionCardsCol4.append(occasionCardsContainer4);
 
 var occasionCardsImage4 = document.createElement("img");
 occasionCardsImage4.setAttribute("class","occasion-card__image");
-occasionCardsImage4.setAttribute("src","./images/occasion-card__image4.webp");
+occasionCardsImage4.setAttribute("src","./images/occasion/occasion-card__image4.webp");
 occasionCardsImage4.style.width = "100%";
 occasionCardsImage4.style.height = "100%";
 occasionCardsContainer4.append(occasionCardsImage4);
@@ -423,7 +423,7 @@ budgetCardsCol1.append(budgetCardsContainer1);
 
 var budgetCardsImage1 = document.createElement("img");
 budgetCardsImage1.setAttribute("class","budget-card__image");
-budgetCardsImage1.setAttribute("src","./images/budget-card__image1.webp");
+budgetCardsImage1.setAttribute("src","./images/budget/budget-card__image1.webp");
 budgetCardsImage1.style.width = "100%";
 budgetCardsImage1.style.height = "100%";
 budgetCardsContainer1.append(budgetCardsImage1);
@@ -441,7 +441,7 @@ budgetCardsCol2.append(budgetCardsContainer2);
 
 var budgetCardsImage2 = document.createElement("img");
 budgetCardsImage2.setAttribute("class","budget-card__image");
-budgetCardsImage2.setAttribute("src","./images/budget-card__image2.webp");
+budgetCardsImage2.setAttribute("src","./images/budget/budget-card__image2.webp");
 budgetCardsImage2.style.width = "100%";
 budgetCardsImage2.style.height = "100%";
 budgetCardsContainer2.append(budgetCardsImage2);
@@ -459,7 +459,7 @@ budgetCardsCol3.append(budgetCardsContainer3);
 
 var budgetCardsImage3 = document.createElement("img");
 budgetCardsImage3.setAttribute("class","budget-card__image");
-budgetCardsImage3.setAttribute("src","./images/budget-card__image3.webp");
+budgetCardsImage3.setAttribute("src","./images/budget/budget-card__image3.webp");
 budgetCardsImage3.style.width = "100%";
 budgetCardsImage3.style.height = "100%";
 budgetCardsContainer3.append(budgetCardsImage3);
@@ -477,7 +477,7 @@ budgetCardsCol4.append(budgetCardsContainer4);
 
 var budgetCardsImage4 = document.createElement("img");
 budgetCardsImage4.setAttribute("class","budget-card__image");
-budgetCardsImage4.setAttribute("src","./images/budget-card__image4.webp");
+budgetCardsImage4.setAttribute("src","./images/budget/budget-card__image4.webp");
 budgetCardsImage4.style.width = "100%";
 budgetCardsImage4.style.height = "100%";
 budgetCardsContainer4.append(budgetCardsImage4);
@@ -495,7 +495,7 @@ budgetCardsCol5.append(budgetCardsContainer5);
 
 var budgetCardsImage5 = document.createElement("img");
 budgetCardsImage5.setAttribute("class","budget-card__image");
-budgetCardsImage5.setAttribute("src","./images/budget-card__image5.webp");
+budgetCardsImage5.setAttribute("src","./images/budget/budget-card__image5.webp");
 budgetCardsImage5.style.width = "100%";
 budgetCardsImage5.style.height = "100%";
 budgetCardsContainer5.append(budgetCardsImage5);
@@ -513,7 +513,7 @@ budgetCardsCol6.append(budgetCardsContainer6);
 
 var budgetCardsImage6 = document.createElement("img");
 budgetCardsImage6.setAttribute("class","budget-card__image");
-budgetCardsImage6.setAttribute("src","./images/budget-card__image6.webp");
+budgetCardsImage6.setAttribute("src","./images/budget/budget-card__image6.webp");
 budgetCardsImage6.style.width = "100%";
 budgetCardsImage6.style.height = "100%";
 budgetCardsContainer6.append(budgetCardsImage6);
@@ -565,7 +565,7 @@ clothTypeCol1.append(clothTypeImageContainer1);
 
 var clothTypeImage1 = document.createElement('img');
 clothTypeImage1.setAttribute("class","clothType__image");
-clothTypeImage1.setAttribute("src","./images/clothType-card__image1.webp");
+clothTypeImage1.setAttribute("src","./images/clothType/clothType-card__image1.webp");
 clothTypeImage1.style.width = "100%";
 clothTypeImage1.style.height = "100%";
 clothTypeImageContainer1.append(clothTypeImage1);
@@ -590,7 +590,7 @@ clothTypeCol2.append(clothTypeImageContainer2);
 
 var clothTypeImage2 = document.createElement('img');
 clothTypeImage2.setAttribute("class","clothType__image");
-clothTypeImage2.setAttribute("src","./images/clothType-card__image2.webp");
+clothTypeImage2.setAttribute("src","./images/clothType/clothType-card__image2.webp");
 clothTypeImage2.style.width = "100%";
 clothTypeImage2.style.height = "100%";
 clothTypeImageContainer2.append(clothTypeImage2);
@@ -615,7 +615,7 @@ clothTypeCol3.append(clothTypeImageContainer3);
 
 var clothTypeImage3 = document.createElement('img');
 clothTypeImage3.setAttribute("class","clothType__image");
-clothTypeImage3.setAttribute("src","./images/clothType-card__image3.webp");
+clothTypeImage3.setAttribute("src","./images/clothType/clothType-card__image3.webp");
 clothTypeImage3.style.width = "100%";
 clothTypeImage3.style.height = "100%";
 clothTypeImageContainer3.append(clothTypeImage3);
@@ -640,7 +640,7 @@ clothTypeCol4.append(clothTypeImageContainer4);
 
 var clothTypeImage4 = document.createElement('img');
 clothTypeImage4.setAttribute("class","clothType__image");
-clothTypeImage4.setAttribute("src","./images/clothType-card__image4.webp");
+clothTypeImage4.setAttribute("src","./images/clothType/clothType-card__image4.webp");
 clothTypeImage4.style.width = "100%";
 clothTypeImage4.style.height = "100%";
 clothTypeImageContainer4.append(clothTypeImage4);
@@ -665,7 +665,7 @@ clothTypeCol5.append(clothTypeImageContainer5);
 
 var clothTypeImage5 = document.createElement('img');
 clothTypeImage5.setAttribute("class","clothType__image");
-clothTypeImage5.setAttribute("src","./images/clothType-card__image5.webp");
+clothTypeImage5.setAttribute("src","./images/clothType/clothType-card__image5.webp");
 clothTypeImage5.style.width = "100%";
 clothTypeImage5.style.height = "100%";
 clothTypeImageContainer5.append(clothTypeImage5);
@@ -690,7 +690,7 @@ clothTypeCol6.append(clothTypeImageContainer6);
 
 var clothTypeImage6 = document.createElement('img');
 clothTypeImage6.setAttribute("class","clothType__image");
-clothTypeImage6.setAttribute("src","./images/clothType-card__image6.webp");
+clothTypeImage6.setAttribute("src","./images/clothType/clothType-card__image6.webp");
 clothTypeImage6.style.width = "100%";
 clothTypeImage6.style.height = "100%";
 clothTypeImageContainer6.append(clothTypeImage6);
@@ -715,7 +715,7 @@ clothTypeCol7.append(clothTypeImageContainer7);
 
 var clothTypeImage7 = document.createElement('img');
 clothTypeImage7.setAttribute("class","clothType__image");
-clothTypeImage7.setAttribute("src","./images/clothType-card__image7.webp");
+clothTypeImage7.setAttribute("src","./images/clothType/clothType-card__image7.webp");
 clothTypeImage7.style.width = "100%";
 clothTypeImage7.style.height = "100%";
 clothTypeImageContainer7.append(clothTypeImage7);
@@ -740,7 +740,7 @@ clothTypeCol8.append(clothTypeImageContainer8);
 
 var clothTypeImage8 = document.createElement('img');
 clothTypeImage8.setAttribute("class","clothType__image");
-clothTypeImage8.setAttribute("src","./images/clothType-card__image8.webp");
+clothTypeImage8.setAttribute("src","./images/clothType/clothType-card__image8.webp");
 clothTypeImage8.style.width = "100%";
 clothTypeImage8.style.height = "100%";
 clothTypeImageContainer8.append(clothTypeImage8);
@@ -765,7 +765,7 @@ clothTypeCol9.append(clothTypeImageContainer9);
 
 var clothTypeImage9 = document.createElement('img');
 clothTypeImage9.setAttribute("class","clothType__image");
-clothTypeImage9.setAttribute("src","./images/clothType-card__image9.webp");
+clothTypeImage9.setAttribute("src","./images/clothType/clothType-card__image9.webp");
 clothTypeImage9.style.width = "100%";
 clothTypeImage9.style.height = "100%";
 clothTypeImageContainer9.append(clothTypeImage9);
@@ -790,7 +790,7 @@ clothTypeCol10.append(clothTypeImageContainer10);
 
 var clothTypeImage10 = document.createElement('img');
 clothTypeImage10.setAttribute("class","clothType__image");
-clothTypeImage10.setAttribute("src","./images/clothType-card__image10.webp");
+clothTypeImage10.setAttribute("src","./images/clothType/clothType-card__image10.webp");
 clothTypeImage10.style.width = "100%";
 clothTypeImage10.style.height = "100%";
 clothTypeImageContainer10.append(clothTypeImage10);
@@ -815,7 +815,7 @@ clothTypeCol11.append(clothTypeImageContainer11);
 
 var clothTypeImage11 = document.createElement('img');
 clothTypeImage11.setAttribute("class","clothType__image");
-clothTypeImage11.setAttribute("src","./images/clothType-card__image11.webp");
+clothTypeImage11.setAttribute("src","./images/clothType/clothType-card__image11.webp");
 clothTypeImage11.style.width = "100%";
 clothTypeImage11.style.height = "100%";
 clothTypeImageContainer11.append(clothTypeImage11);
@@ -840,7 +840,7 @@ clothTypeCol12.append(clothTypeImageContainer12);
 
 var clothTypeImage12 = document.createElement('img');
 clothTypeImage12.setAttribute("class","clothType__image");
-clothTypeImage12.setAttribute("src","./images/clothType-card__image12.webp");
+clothTypeImage12.setAttribute("src","./images/clothType/clothType-card__image12.webp");
 clothTypeImage12.style.width = "100%";
 clothTypeImage12.style.height = "100%";
 clothTypeImageContainer12.append(clothTypeImage12);
@@ -870,7 +870,7 @@ weavesCardsCol1.append(weavesCardsContainer1);
 
 var weavesCardsImage1 = document.createElement("img");
 weavesCardsImage1.setAttribute("class","weaves-card__image");
-weavesCardsImage1.setAttribute("src","./images/weaves-card__image1.webp");
+weavesCardsImage1.setAttribute("src","./images/weaves/weaves-card__image1.webp");
 weavesCardsImage1.style.width = "100%";
 weavesCardsImage1.style.height = "100%";
 weavesCardsContainer1.append(weavesCardsImage1);
@@ -888,7 +888,7 @@ weavesCardsCol2.append(weavesCardsContainer2);
 
 var weavesCardsImage2 = document.createElement("img");
 weavesCardsImage2.setAttribute("class","weaves-card__image");
-weavesCardsImage2.setAttribute("src","./images/weaves-card__image2.webp");
+weavesCardsImage2.setAttribute("src","./images/weaves/weaves-card__image2.webp");
 weavesCardsImage2.style.width = "100%";
 weavesCardsImage2.style.height = "100%";
 weavesCardsContainer2.append(weavesCardsImage2);
@@ -960,10 +960,9 @@ collectionsFirstSaleCard.style.padding = "5px"
 collectionsFirstSaleCard.style.fontWeight = "600"
 collectionsFirstImageContainer1.append(collectionsFirstSaleCard)
 
-
 var collectionsFirstImage1 = document.createElement('img');
 collectionsFirstImage1.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage1.setAttribute("src","./images/collectionsFirst-card__image1.webp");
+collectionsFirstImage1.setAttribute("src","./images/collection1/collectionsFirst-card__image1.webp");
 collectionsFirstImage1.style.width = "100%";
 collectionsFirstImage1.style.height = "100%";
 collectionsFirstImageContainer1.append(collectionsFirstImage1);
@@ -988,8 +987,6 @@ collectionsFirstCaptionPrice1.innerText = "BUY NOW";
 collectionsFirstCaptionPrice1.style.fontSize = "16px";
 collectionsFirstCaptionPrice1.style.fontWeight = "600"
 collectionsFirstImageContainer1.append(collectionsFirstCaptionSubTitle1,collectionsFirstCaptionTitle1,collectionsFirstCaptionPrice1);
-
-
 
 var collectionsFirstCol2 = document.createElement("div");
 collectionsFirstCol2.setAttribute("class","col-6");
@@ -1018,10 +1015,9 @@ collectionsFirstSaleCard.style.padding = "5px"
 collectionsFirstSaleCard.style.fontWeight = "600"
 collectionsFirstImageContainer2.append(collectionsFirstSaleCard)
 
-
 var collectionsFirstImage2 = document.createElement('img');
 collectionsFirstImage2.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage2.setAttribute("src","./images/collectionsFirst-card__image2.webp");
+collectionsFirstImage2.setAttribute("src","./images/collection1/collectionsFirst-card__image2.webp");
 collectionsFirstImage2.style.width = "100%";
 collectionsFirstImage2.style.height = "100%";
 collectionsFirstImageContainer2.append(collectionsFirstImage2);
@@ -1046,21 +1042,6 @@ collectionsFirstCaptionPrice2.innerText = "BUY NOW";
 collectionsFirstCaptionPrice2.style.fontSize = "16px";
 collectionsFirstCaptionPrice2.style.fontWeight = "600"
 collectionsFirstImageContainer2.append(collectionsFirstCaptionSubTitle2,collectionsFirstCaptionTitle2,collectionsFirstCaptionPrice2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var collectionsFirstCol3 = document.createElement("div");
 collectionsFirstCol3.setAttribute("class","col-6");
@@ -1089,10 +1070,9 @@ collectionsFirstSaleCard.style.padding = "5px"
 collectionsFirstSaleCard.style.fontWeight = "600"
 collectionsFirstImageContainer3.append(collectionsFirstSaleCard)
 
-
 var collectionsFirstImage3 = document.createElement('img');
 collectionsFirstImage3.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage3.setAttribute("src","./images/collectionsFirst-card__image3.webp");
+collectionsFirstImage3.setAttribute("src","./images/collection1/collectionsFirst-card__image3.webp");
 collectionsFirstImage3.style.width = "100%";
 collectionsFirstImage3.style.height = "100%";
 collectionsFirstImageContainer3.append(collectionsFirstImage3);
@@ -1117,19 +1097,6 @@ collectionsFirstCaptionPrice3.innerText = "BUY NOW";
 collectionsFirstCaptionPrice3.style.fontSize = "16px";
 collectionsFirstCaptionPrice3.style.fontWeight = "600"
 collectionsFirstImageContainer3.append(collectionsFirstCaptionSubTitle3,collectionsFirstCaptionTitle3,collectionsFirstCaptionPrice3);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var collectionsFirstCol4 = document.createElement("div");
 collectionsFirstCol4.setAttribute("class","col-6");
@@ -1158,10 +1125,9 @@ collectionsFirstSaleCard.style.padding = "5px"
 collectionsFirstSaleCard.style.fontWeight = "600"
 collectionsFirstImageContainer4.append(collectionsFirstSaleCard)
 
-
 var collectionsFirstImage4 = document.createElement('img');
 collectionsFirstImage4.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage4.setAttribute("src","./images/collectionsFirst-card__image4.webp");
+collectionsFirstImage4.setAttribute("src","./images/collection1/collectionsFirst-card__image4.webp");
 collectionsFirstImage4.style.width = "100%";
 collectionsFirstImage4.style.height = "100%";
 collectionsFirstImageContainer4.append(collectionsFirstImage4);
@@ -1187,143 +1153,7 @@ collectionsFirstCaptionPrice4.style.fontSize = "16px";
 collectionsFirstCaptionPrice4.style.fontWeight = "600"
 collectionsFirstImageContainer4.append(collectionsFirstCaptionSubTitle4,collectionsFirstCaptionTitle4,collectionsFirstCaptionPrice4);
 
-
-
-
-
-
-
-
-
-
-
-
-
-// var collectionsFirstCol5 = document.createElement("div");
-// collectionsFirstCol5.setAttribute("class","col-3");
-// collectionsFirstRow.append(collectionsFirstCol5);
-
-// var collectionsFirstImageContainer5 = document.createElement("div");
-// collectionsFirstImageContainer5.setAttribute("class","collectionsFirst__image-container");
-// collectionsFirstImageContainer5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
-// collectionsFirstImageContainer5.style.width = "100%";
-// collectionsFirstImageContainer5.style.height = "100%";
-// collectionsFirstImageContainer5.style.position = "relative"
-// collectionsFirstImageContainer5.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
-// collectionsFirstImageContainer5.style.backgroundColor = "#fcfdff"
-// collectionsFirstCol5.append(collectionsFirstImageContainer5);
-
-// var collectionsFirstSaleCard = document.createElement("div");
-// collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
-// collectionsFirstSaleCard.innerText = "SALE!"
-// collectionsFirstSaleCard.style.position = "absolute";
-// collectionsFirstSaleCard.style.top = "20px";
-// collectionsFirstSaleCard.style.left = "20px";
-// collectionsFirstSaleCard.style.fontSize = "14px";
-// collectionsFirstSaleCard.style.backgroundColor = "white";
-// collectionsFirstSaleCard.style.padding = "5px"
-// collectionsFirstSaleCard.style.fontWeight = "600"
-// collectionsFirstImageContainer5.append(collectionsFirstSaleCard)
-
-
-// var collectionsFirstImage5 = document.createElement('img');
-// collectionsFirstImage5.setAttribute("class","collectionsFirst__image");
-// collectionsFirstImage5.setAttribute("src","./images/collectionsFirst-card__image5.webp");
-// collectionsFirstImage5.style.width = "100%";
-// collectionsFirstImage5.style.height = "100%";
-// collectionsFirstImageContainer5.append(collectionsFirstImage5);
-
-// var collectionsFirstCaptionSubTitle5 = document.createElement("p");
-// collectionsFirstCaptionSubTitle5.setAttribute("class","collectionsFirst__image--captionSubTitle");
-// collectionsFirstCaptionSubTitle5.classList.add("pt-3")
-// collectionsFirstCaptionSubTitle5.innerText = "Crepe Saree";
-// collectionsFirstCaptionSubTitle5.style.color = "#bbbdbf"
-// collectionsFirstCaptionSubTitle5.style.fontSize = "14px"
-// collectionsFirstCaptionSubTitle5.style.fontWeight = "400"
-
-// var collectionsFirstCaptionTitle5 = document.createElement("p");
-// collectionsFirstCaptionTitle5.setAttribute("class","collectionsFirst__image--captionTitle");
-// collectionsFirstCaptionTitle5.innerText = "Dark Blue Crepe Saree";
-// collectionsFirstCaptionTitle5.style.fontSize = "18px"
-// collectionsFirstCaptionTitle5.style.fontWeight = "300"
-
-// var collectionsFirstCaptionPrice5 = document.createElement("p");
-// collectionsFirstCaptionPrice5.setAttribute("class","collectionsFirst__image--captionPrice");
-// collectionsFirstCaptionPrice5.innerText = "BUY NOW";
-// collectionsFirstCaptionPrice5.style.fontSize = "16px";
-// collectionsFirstCaptionPrice5.style.fontWeight = "600"
-// collectionsFirstImageContainer5.append(collectionsFirstCaptionSubTitle5,collectionsFirstCaptionTitle5,collectionsFirstCaptionPrice5);
-
-
-
-
-
-
-
-
-
-
-
-// var collectionsFirstCol6 = document.createElement("div");
-// collectionsFirstCol6.setAttribute("class","col-3");
-// collectionsFirstRow.append(collectionsFirstCol6);
-
-// var collectionsFirstImageContainer6 = document.createElement("div");
-// collectionsFirstImageContainer6.setAttribute("class","collectionsFirst__image-container");
-// collectionsFirstImageContainer6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
-// collectionsFirstImageContainer6.style.width = "100%";
-// collectionsFirstImageContainer6.style.height = "100%";
-// collectionsFirstImageContainer6.style.position = "relative"
-// collectionsFirstImageContainer6.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
-// collectionsFirstImageContainer6.style.backgroundColor = "#fcfdff"
-// collectionsFirstCol6.append(collectionsFirstImageContainer6);
-
-// var collectionsFirstSaleCard = document.createElement("div");
-// collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
-// collectionsFirstSaleCard.innerText = "SALE!"
-// collectionsFirstSaleCard.style.position = "absolute";
-// collectionsFirstSaleCard.style.top = "20px";
-// collectionsFirstSaleCard.style.left = "20px";
-// collectionsFirstSaleCard.style.fontSize = "14px";
-// collectionsFirstSaleCard.style.backgroundColor = "white";
-// collectionsFirstSaleCard.style.padding = "5px"
-// collectionsFirstSaleCard.style.fontWeight = "600"
-// collectionsFirstImageContainer6.append(collectionsFirstSaleCard)
-
-
-// var collectionsFirstImage6 = document.createElement('img');
-// collectionsFirstImage6.setAttribute("class","collectionsFirst__image");
-// collectionsFirstImage6.setAttribute("src","./images/collectionsFirst-card__image6.webp");
-// collectionsFirstImage6.style.width = "100%";
-// collectionsFirstImage6.style.height = "100%";
-// collectionsFirstImageContainer6.append(collectionsFirstImage6);
-
-// var collectionsFirstCaptionSubTitle6 = document.createElement("p");
-// collectionsFirstCaptionSubTitle6.setAttribute("class","collectionsFirst__image--captionSubTitle");
-// collectionsFirstCaptionSubTitle6.classList.add("pt-3")
-// collectionsFirstCaptionSubTitle6.innerText = "Crepe Saree";
-// collectionsFirstCaptionSubTitle6.style.color = "#bbbdbf"
-// collectionsFirstCaptionSubTitle6.style.fontSize = "14px"
-// collectionsFirstCaptionSubTitle6.style.fontWeight = "400"
-
-// var collectionsFirstCaptionTitle6 = document.createElement("p");
-// collectionsFirstCaptionTitle6.setAttribute("class","collectionsFirst__image--captionTitle");
-// collectionsFirstCaptionTitle6.innerText = "Dark Blue Crepe Saree";
-// collectionsFirstCaptionTitle6.style.fontSize = "18px"
-// collectionsFirstCaptionTitle6.style.fontWeight = "300"
-
-// var collectionsFirstCaptionPrice6 = document.createElement("p");
-// collectionsFirstCaptionPrice6.setAttribute("class","collectionsFirst__image--captionPrice");
-// collectionsFirstCaptionPrice6.innerText = "BUY NOW";
-// collectionsFirstCaptionPrice6.style.fontSize = "16px";
-// collectionsFirstCaptionPrice6.style.fontWeight = "600"
-// collectionsFirstImageContainer6.append(collectionsFirstCaptionSubTitle6,collectionsFirstCaptionTitle6,collectionsFirstCaptionPrice6);
-
-
-
-
 // collection second
-
 
 var collectionsSecondRow2 = document.createElement("div");
 collectionsSecondRow2.setAttribute("class","row");
@@ -1354,7 +1184,6 @@ collectionsSecondTitleHeading.innerText = "Our exclusive Churidar Collection"
 collectionsSecondTitleHeading.style.fontStyle = "italic";
 collectionsSecondTitleHeading.style.fontWeight = "600"
 collectionsSecondTitle.append(collectionsSecondTitleParagraph,collectionsSecondTitleHeading);
-
 
 var scrollWrapper2 = document.createElement("div");
 scrollWrapper2.setAttribute("class","collectionsFirst__scroll-wrapper");
@@ -1393,10 +1222,9 @@ collectionsSecondSaleCard.style.padding = "5px"
 collectionsSecondSaleCard.style.fontWeight = "600"
 collectionsSecondImageContainer1.append(collectionsSecondSaleCard)
 
-
 var collectionsSecondImage1 = document.createElement('img');
 collectionsSecondImage1.setAttribute("class","collectionsSecond__image");
-collectionsSecondImage1.setAttribute("src","./images/collectionsSecond-card__image1.webp");
+collectionsSecondImage1.setAttribute("src","./images/collection2/collectionsSecond-card__image1.webp");
 collectionsSecondImage1.style.width = "100%";
 collectionsSecondImage1.style.height = "100%";
 collectionsSecondImageContainer1.append(collectionsSecondImage1);
@@ -1421,8 +1249,6 @@ collectionsSecondCaptionPrice1.innerText = "BUY NOW";
 collectionsSecondCaptionPrice1.style.fontSize = "16px";
 collectionsSecondCaptionPrice1.style.fontWeight = "600"
 collectionsSecondImageContainer1.append(collectionsSecondCaptionSubTitle1,collectionsSecondCaptionTitle1,collectionsSecondCaptionPrice1);
-
-
 
 var collectionsSecondCol2 = document.createElement("div");
 collectionsSecondCol2.setAttribute("class","col-6");
@@ -1451,10 +1277,9 @@ collectionsSecondSaleCard.style.padding = "5px"
 collectionsSecondSaleCard.style.fontWeight = "600"
 collectionsSecondImageContainer2.append(collectionsSecondSaleCard)
 
-
 var collectionsSecondImage2 = document.createElement('img');
 collectionsSecondImage2.setAttribute("class","collectionsSecond__image");
-collectionsSecondImage2.setAttribute("src","./images/collectionsSecond-card__image2.webp");
+collectionsSecondImage2.setAttribute("src","./images/collection2/collectionsSecond-card__image2.webp");
 collectionsSecondImage2.style.width = "100%";
 collectionsSecondImage2.style.height = "100%";
 collectionsSecondImageContainer2.append(collectionsSecondImage2);
@@ -1479,21 +1304,6 @@ collectionsSecondCaptionPrice2.innerText = "BUY NOW";
 collectionsSecondCaptionPrice2.style.fontSize = "16px";
 collectionsSecondCaptionPrice2.style.fontWeight = "600"
 collectionsSecondImageContainer2.append(collectionsSecondCaptionSubTitle2,collectionsSecondCaptionTitle2,collectionsSecondCaptionPrice2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var collectionsSecondCol3 = document.createElement("div");
 collectionsSecondCol3.setAttribute("class","col-6");
@@ -1522,10 +1332,9 @@ collectionsSecondSaleCard.style.padding = "5px"
 collectionsSecondSaleCard.style.fontWeight = "600"
 collectionsSecondImageContainer3.append(collectionsSecondSaleCard)
 
-
 var collectionsSecondImage3 = document.createElement('img');
 collectionsSecondImage3.setAttribute("class","collectionsSecond__image");
-collectionsSecondImage3.setAttribute("src","./images/collectionsSecond-card__image3.webp");
+collectionsSecondImage3.setAttribute("src","./images/collection2/collectionsSecond-card__image3.webp");
 collectionsSecondImage3.style.width = "100%";
 collectionsSecondImage3.style.height = "100%";
 collectionsSecondImageContainer3.append(collectionsSecondImage3);
@@ -1550,18 +1359,6 @@ collectionsSecondCaptionPrice3.innerText = "BUY NOW";
 collectionsSecondCaptionPrice3.style.fontSize = "16px";
 collectionsSecondCaptionPrice3.style.fontWeight = "600"
 collectionsSecondImageContainer3.append(collectionsSecondCaptionSubTitle3,collectionsSecondCaptionTitle3,collectionsSecondCaptionPrice3);
-
-
-
-
-
-
-
-
-
-
-
-
 
 var collectionsSecondCol4 = document.createElement("div");
 collectionsSecondCol4.setAttribute("class","col-6");
@@ -1590,10 +1387,9 @@ collectionsSecondSaleCard.style.padding = "5px"
 collectionsSecondSaleCard.style.fontWeight = "600"
 collectionsSecondImageContainer4.append(collectionsSecondSaleCard)
 
-
 var collectionsSecondImage4 = document.createElement('img');
 collectionsSecondImage4.setAttribute("class","collectionsSecond__image");
-collectionsSecondImage4.setAttribute("src","./images/collectionsSecond-card__image4.webp");
+collectionsSecondImage4.setAttribute("src","./images/collection2/collectionsSecond-card__image4.webp");
 collectionsSecondImage4.style.width = "100%";
 collectionsSecondImage4.style.height = "100%";
 collectionsSecondImageContainer4.append(collectionsSecondImage4);
@@ -1619,9 +1415,7 @@ collectionsSecondCaptionPrice4.style.fontSize = "16px";
 collectionsSecondCaptionPrice4.style.fontWeight = "600"
 collectionsSecondImageContainer4.append(collectionsSecondCaptionSubTitle4,collectionsSecondCaptionTitle4,collectionsSecondCaptionPrice4);
 
-
-// footer
-
+/* footer */
 
 var footer = document.createElement("footer");
 footer.style.padding = "7% 7% 10px 7%";
@@ -1778,6 +1572,5 @@ footerCol5Text2.classList.add("pt-3","text-secondary");
 footerCol5Text2.classList.add("text-secondary");
 footerCol5Text2.innerText = " 2025 Seematti. All Rights Reserved. Powered by BBP India Communications."
 footerCol5.append(footerCol5Heading,footerCol5Text1,footerCol5Text2);
-
 
 document.body.append(banner,nav,container,footer);
