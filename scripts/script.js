@@ -19,7 +19,8 @@ row.setAttribute("class","row");
 nav.append(row);
 
 var navbarLeft = document.createElement("div");
-navbarLeft.setAttribute("class","col-6");
+navbarLeft.setAttribute("class","col-lg-7");
+navbarLeft.classList.add("col-md-12","d-md-flex","col-6");
 navbarLeft.style.fontSize = "14px";
 navbarLeft.style.fontWeight = "700"
 navbarLeft.style.display = "flex"
@@ -29,6 +30,7 @@ navbarLeft.style.justifyContent = "space-between"
 
 var navbarRight = document.createElement("div");
 navbarRight.setAttribute("class","col-6");
+navbarRight.classList.add("col-lg-5");
 navbarRight.style.display = "flex";
 navbarRight.style.justifyContent = "flex-end"
 navbarRight.style.alignItems = "center"
@@ -38,26 +40,29 @@ row.append(navbarLeft,navbarRight);
 var navLogo = document.createElement('img');
 navLogo.setAttribute("src", "./images/navbar__logo--image.webp");
 navLogo.setAttribute("class","navbar__logo--image");
-navLogo.style.width = "300px";
+navLogo.style.width = "250px";
 // navLogo.style.height = "100px";
 navbarLeft.append(navLogo);
 
 var navItem1 = document.createElement("div")
-navItem1.setAttribute("class","nav-item")
+navItem1.setAttribute("class","nav-item");
+navItem1.classList.add("d-none","d-md-flex")
 navItem1.style.width="25%"
-navItem1.style.padding = "0 0 0 10px"
+navItem1.style.padding = "0 0 0 5px"
 navItem1.innerHTML= '<i class="bi bi-bell" style ="color:red;"></i> NEW ARIVALS';
 
 var navItem2 = document.createElement("div")
-navItem2.setAttribute("class","nav-item")
+navItem2.setAttribute("class","nav-item");
+navItem2.classList.add("d-none","d-md-flex")
 navItem2.style.width="25%"
-navItem2.style.padding = "0 0 0 10px"
+navItem2.style.padding = "0 0 0 5px"
 navItem2.innerHTML= 'SHOP BY FABRIC';
 
 var navItem3 = document.createElement("div")
-navItem3.setAttribute("class","nav-item")
+navItem3.setAttribute("class","nav-item");
+navItem3.classList.add("d-none","d-md-flex")
 navItem3.style.width="25%"
-navItem3.style.padding = "0 0 0 10px"
+navItem3.style.padding = "0 0 0 5px"
 navItem3.innerHTML= 'SHOP BY CATEGORY';
 // document.getElementById("bell").style.color = "red";
 navbarLeft.append(navItem1,navItem2,navItem3);
@@ -66,6 +71,7 @@ var navSearch = document.createElement("input");
 navSearch.setAttribute("class","nav-bar__search");
 navSearch.setAttribute("type","text");
 navSearch.setAttribute("placeholder","Search For Product");
+navSearch.classList.add("d-none","d-lg-flex");
 navSearch.style.border = "1px solid lightgray"
 navSearch.style.height = "70%"
 navSearch.style.width = "40%"
@@ -73,10 +79,22 @@ navbarRight.append(navSearch)
 
 var navItemPrice = document.createElement("div");
 navItemPrice.setAttribute("class","nav-item nav-item__price");
+navItemPrice.classList.add("d-none","d-lg-flex");
 navItemPrice.innerHTML = '<i class="bi bi-handbag" style="font-weight:800;"></i> &nbsp;$0 / 0.0';
 navItemPrice.style.fontSize = "14";
 navItemPrice.style.fontWeight = "700"
 navbarRight.append(navItemPrice);
+
+var navItemBarContainer = document.createElement("div");
+navItemBarContainer.setAttribute("class","nav-item__bar-container");
+navItemBarContainer.classList.add("d-md-none");
+navbarRight.append(navItemBarContainer);
+
+var navItemBar = document.createElement("i");
+navItemBar.setAttribute("class","bi");
+navItemBar.classList.add("bi-list");
+navItemBar.style.fontSize = "32px";
+navItemBarContainer.append(navItemBar);
 
 var container = document.createElement("div");
 container.setAttribute("class","main-container");
@@ -95,15 +113,24 @@ heroRow.append(heroCol);
 var heroImage = document.createElement("img");
 heroImage.setAttribute("class","hero-section__image");
 heroImage.setAttribute("src","./images/hero-section__image.webp");
+heroImage.classList.add("d-md-flex","d-none");
 heroImage.style.width = "100%"
 heroCol.append(heroImage);
+
+var heroImageMobile = document.createElement("img");
+heroImageMobile.setAttribute("class","hero-section__image--mobile");
+heroImageMobile.setAttribute("src","./images/hero-section__image--mobile.webp");
+heroImageMobile.classList.add("d-md-none");
+heroImageMobile.style.width = "100%"
+heroCol.append(heroImageMobile);
 
 var typesCardsRow = document.createElement("div");
 typesCardsRow.setAttribute("class","row");
 container.append(typesCardsRow);
 
 var typesCardsCol1 = document.createElement("div");
-typesCardsCol1.setAttribute("class","col-2");
+typesCardsCol1.setAttribute("class","col-6");
+typesCardsCol1.classList.add("col-sm-4","col-lg-2")
 typesCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol1);
 
@@ -127,7 +154,8 @@ typesCardCaption1.style.fontStyle = "italic";
 typesCardsCol1.append(typesCardCaption1);
 
 var typesCardsCol2 = document.createElement("div");
-typesCardsCol2.setAttribute("class","col-2");
+typesCardsCol2.setAttribute("class","col-6");
+typesCardsCol2.classList.add("col-sm-4","col-lg-2")
 typesCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol2);
 
@@ -151,7 +179,8 @@ typesCardCaption2.style.fontStyle = "italic";
 typesCardsCol2.append(typesCardCaption2);
 
 var typesCardsCol3 = document.createElement("div");
-typesCardsCol3.setAttribute("class","col-2");
+typesCardsCol3.setAttribute("class","col-6");
+typesCardsCol3.classList.add("col-sm-4","col-lg-2")
 typesCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol3);
 
@@ -175,7 +204,8 @@ typesCardCaption3.style.fontStyle = "italic";
 typesCardsCol3.append(typesCardCaption3);
 
 var typesCardsCol4 = document.createElement("div");
-typesCardsCol4.setAttribute("class","col-2");
+typesCardsCol4.setAttribute("class","col-6");
+typesCardsCol4.classList.add("col-sm-4","col-lg-2")
 typesCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol4);
 
@@ -199,7 +229,8 @@ typesCardCaption4.style.fontStyle = "italic";
 typesCardsCol4.append(typesCardCaption4);
 
 var typesCardsCol5 = document.createElement("div");
-typesCardsCol5.setAttribute("class","col-2");
+typesCardsCol5.setAttribute("class","col-6");
+typesCardsCol5.classList.add("col-sm-4","col-lg-2")
 typesCardsCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol5);
 
@@ -223,7 +254,8 @@ typesCardCaption5.style.fontStyle = "italic";
 typesCardsCol5.append(typesCardCaption5);
 
 var typesCardsCol6 = document.createElement("div");
-typesCardsCol6.setAttribute("class","col-2");
+typesCardsCol6.setAttribute("class","col-6");
+typesCardsCol6.classList.add("col-sm-4","col-lg-2")
 typesCardsCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
 typesCardsRow.append(typesCardsCol6);
 
@@ -277,8 +309,8 @@ occasionTitleHeading.style.fontWeight = "600"
 occasionTitle.append(occasionTitleParagraph,occasionTitleHeading);
 
 var occasionCardsCol1 = document.createElement("div");
-occasionCardsCol1.setAttribute("class","col-3");
-occasionCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionCardsCol1.setAttribute("class","col-6");
+occasionCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-3","pb-3","pb-md-0");
 occasionRow.append(occasionCardsCol1);
 
 var occasionCardsContainer1 = document.createElement("div");
@@ -295,8 +327,8 @@ occasionCardsImage1.style.height = "100%";
 occasionCardsContainer1.append(occasionCardsImage1);
 
 var occasionCardsCol2 = document.createElement("div");
-occasionCardsCol2.setAttribute("class","col-3");
-occasionCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionCardsCol2.setAttribute("class","col-6");
+occasionCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-3","pb-3","pb-md-0");
 occasionRow.append(occasionCardsCol2);
 
 var occasionCardsContainer2 = document.createElement("div");
@@ -313,8 +345,8 @@ occasionCardsImage2.style.height = "100%";
 occasionCardsContainer2.append(occasionCardsImage2);
 
 var occasionCardsCol3 = document.createElement("div");
-occasionCardsCol3.setAttribute("class","col-3");
-occasionCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionCardsCol3.setAttribute("class","col-6");
+occasionCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-3","pb-3","pb-md-0");
 occasionRow.append(occasionCardsCol3);
 
 var occasionCardsContainer3 = document.createElement("div");
@@ -331,8 +363,8 @@ occasionCardsImage3.style.height = "100%";
 occasionCardsContainer3.append(occasionCardsImage3);
 
 var occasionCardsCol4 = document.createElement("div");
-occasionCardsCol4.setAttribute("class","col-3");
-occasionCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+occasionCardsCol4.setAttribute("class","col-6");
+occasionCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-3","pb-3","pb-md-0");
 occasionRow.append(occasionCardsCol4);
 
 var occasionCardsContainer4 = document.createElement("div");
@@ -379,8 +411,8 @@ budgetTitleHeading.style.fontWeight = "600"
 budgetTitle.append(budgetTitleParagraph,budgetTitleHeading);
 
 var budgetCardsCol1 = document.createElement("div");
-budgetCardsCol1.setAttribute("class","col-2");
-budgetCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol1.setAttribute("class","col-6");
+budgetCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol1);
 
 var budgetCardsContainer1 = document.createElement("div");
@@ -397,8 +429,8 @@ budgetCardsImage1.style.height = "100%";
 budgetCardsContainer1.append(budgetCardsImage1);
 
 var budgetCardsCol2 = document.createElement("div");
-budgetCardsCol2.setAttribute("class","col-2");
-budgetCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol2.setAttribute("class","col-6");
+budgetCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol2);
 
 var budgetCardsContainer2 = document.createElement("div");
@@ -415,8 +447,8 @@ budgetCardsImage2.style.height = "100%";
 budgetCardsContainer2.append(budgetCardsImage2);
 
 var budgetCardsCol3 = document.createElement("div");
-budgetCardsCol3.setAttribute("class","col-2");
-budgetCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol3.setAttribute("class","col-6");
+budgetCardsCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol3);
 
 var budgetCardsContainer3 = document.createElement("div");
@@ -433,8 +465,8 @@ budgetCardsImage3.style.height = "100%";
 budgetCardsContainer3.append(budgetCardsImage3);
 
 var budgetCardsCol4 = document.createElement("div");
-budgetCardsCol4.setAttribute("class","col-2");
-budgetCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol4.setAttribute("class","col-6");
+budgetCardsCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol4);
 
 var budgetCardsContainer4 = document.createElement("div");
@@ -451,8 +483,8 @@ budgetCardsImage4.style.height = "100%";
 budgetCardsContainer4.append(budgetCardsImage4);
 
 var budgetCardsCol5 = document.createElement("div");
-budgetCardsCol5.setAttribute("class","col-2");
-budgetCardsCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol5.setAttribute("class","col-6");
+budgetCardsCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol5);
 
 var budgetCardsContainer5 = document.createElement("div");
@@ -469,8 +501,8 @@ budgetCardsImage5.style.height = "100%";
 budgetCardsContainer5.append(budgetCardsImage5);
 
 var budgetCardsCol6 = document.createElement("div");
-budgetCardsCol6.setAttribute("class","col-2");
-budgetCardsCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+budgetCardsCol6.setAttribute("class","col-6");
+budgetCardsCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-2","pb-3","pb-lg-0");
 budgetRow.append(budgetCardsCol6);
 
 var budgetCardsContainer6 = document.createElement("div");
@@ -521,8 +553,8 @@ clothTypeTitle.append(clothTypeTitleParagraph,clothTypeTitleHeading);
 // container.append(clothTypeRow2);
 
 var clothTypeCol1 = document.createElement("div");
-clothTypeCol1.setAttribute("class","col-3");
-clothTypeCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol1.setAttribute("class","col-6");
+clothTypeCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol1);
 
 var clothTypeImageContainer1 = document.createElement("div");
@@ -546,8 +578,8 @@ clothTypeCaption1.style.fontWeight = "500"
 clothTypeCol1.append(clothTypeCaption1);
 
 var clothTypeCol2 = document.createElement("div");
-clothTypeCol2.setAttribute("class","col-3");
-clothTypeCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol2.setAttribute("class","col-6");
+clothTypeCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol2);
 
 var clothTypeImageContainer2 = document.createElement("div");
@@ -571,8 +603,8 @@ clothTypeCaption2.style.fontWeight = "500"
 clothTypeCol2.append(clothTypeCaption2);
 
 var clothTypeCol3 = document.createElement("div");
-clothTypeCol3.setAttribute("class","col-3");
-clothTypeCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol3.setAttribute("class","col-6");
+clothTypeCol3.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol3);
 
 var clothTypeImageContainer3 = document.createElement("div");
@@ -596,8 +628,8 @@ clothTypeCaption3.style.fontWeight = "500"
 clothTypeCol3.append(clothTypeCaption3);
 
 var clothTypeCol4 = document.createElement("div");
-clothTypeCol4.setAttribute("class","col-3");
-clothTypeCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol4.setAttribute("class","col-6");
+clothTypeCol4.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol4);
 
 var clothTypeImageContainer4 = document.createElement("div");
@@ -621,8 +653,8 @@ clothTypeCaption4.style.fontWeight = "500"
 clothTypeCol4.append(clothTypeCaption4);
 
 var clothTypeCol5 = document.createElement("div");
-clothTypeCol5.setAttribute("class","col-3");
-clothTypeCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol5.setAttribute("class","col-6");
+clothTypeCol5.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol5);
 
 var clothTypeImageContainer5 = document.createElement("div");
@@ -646,8 +678,8 @@ clothTypeCaption5.style.fontWeight = "500"
 clothTypeCol5.append(clothTypeCaption5);
 
 var clothTypeCol6 = document.createElement("div");
-clothTypeCol6.setAttribute("class","col-3");
-clothTypeCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol6.setAttribute("class","col-6");
+clothTypeCol6.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol6);
 
 var clothTypeImageContainer6 = document.createElement("div");
@@ -671,8 +703,8 @@ clothTypeCaption6.style.fontWeight = "500"
 clothTypeCol6.append(clothTypeCaption6);
 
 var clothTypeCol7 = document.createElement("div");
-clothTypeCol7.setAttribute("class","col-3");
-clothTypeCol7.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol7.setAttribute("class","col-6");
+clothTypeCol7.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol7);
 
 var clothTypeImageContainer7 = document.createElement("div");
@@ -696,8 +728,8 @@ clothTypeCaption7.style.fontWeight = "500"
 clothTypeCol7.append(clothTypeCaption7);
 
 var clothTypeCol8 = document.createElement("div");
-clothTypeCol8.setAttribute("class","col-3");
-clothTypeCol8.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol8.setAttribute("class","col-6");
+clothTypeCol8.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol8);
 
 var clothTypeImageContainer8 = document.createElement("div");
@@ -721,8 +753,8 @@ clothTypeCaption8.style.fontWeight = "500"
 clothTypeCol8.append(clothTypeCaption8);
 
 var clothTypeCol9 = document.createElement("div");
-clothTypeCol9.setAttribute("class","col-3");
-clothTypeCol9.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol9.setAttribute("class","col-6");
+clothTypeCol9.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol9);
 
 var clothTypeImageContainer9 = document.createElement("div");
@@ -746,8 +778,8 @@ clothTypeCaption9.style.fontWeight = "500"
 clothTypeCol9.append(clothTypeCaption9);
 
 var clothTypeCol10 = document.createElement("div");
-clothTypeCol10.setAttribute("class","col-3");
-clothTypeCol10.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol10.setAttribute("class","col-6");
+clothTypeCol10.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol10);
 
 var clothTypeImageContainer10 = document.createElement("div");
@@ -771,8 +803,8 @@ clothTypeCaption10.style.fontWeight = "500"
 clothTypeCol10.append(clothTypeCaption10);
 
 var clothTypeCol11 = document.createElement("div");
-clothTypeCol11.setAttribute("class","col-3");
-clothTypeCol11.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol11.setAttribute("class","col-6");
+clothTypeCol11.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol11);
 
 var clothTypeImageContainer11 = document.createElement("div");
@@ -796,8 +828,8 @@ clothTypeCaption11.style.fontWeight = "500"
 clothTypeCol11.append(clothTypeCaption11);
 
 var clothTypeCol12 = document.createElement("div");
-clothTypeCol12.setAttribute("class","col-3");
-clothTypeCol12.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+clothTypeCol12.setAttribute("class","col-6");
+clothTypeCol12.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-sm-4","col-lg-3","pb-2","pb-sm-3","pb-lg-4");
 clothTypeRow.append(clothTypeCol12);
 
 var clothTypeImageContainer12 = document.createElement("div");
@@ -826,8 +858,8 @@ weavesRow.classList.add("py-5");
 container.append(weavesRow);
 
 var weavesCardsCol1 = document.createElement("div");
-weavesCardsCol1.setAttribute("class","col-6");
-weavesCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+weavesCardsCol1.setAttribute("class","col-12");
+weavesCardsCol1.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-6","mb-3","mb-md-0");
 weavesRow.append(weavesCardsCol1);
 
 var weavesCardsContainer1 = document.createElement("div");
@@ -844,8 +876,8 @@ weavesCardsImage1.style.height = "100%";
 weavesCardsContainer1.append(weavesCardsImage1);
 
 var weavesCardsCol2 = document.createElement("div");
-weavesCardsCol2.setAttribute("class","col-6");
-weavesCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+weavesCardsCol2.setAttribute("class","col-12");
+weavesCardsCol2.classList.add("d-flex","flex-column","justify-content-center","align-items-center","col-md-6","mb-3","mb-md-0");
 weavesRow.append(weavesCardsCol2);
 
 var weavesCardsContainer2 = document.createElement("div");
@@ -898,11 +930,12 @@ container.append(scrollWrapper);
 
 var collectionsFirstRow = document.createElement("div");
 collectionsFirstRow.setAttribute("class","row");
-collectionsFirstRow.classList.add("d-flex","flex-nowrap");
+collectionsFirstRow.classList.add("d-flex");
 scrollWrapper.append(collectionsFirstRow);
 
 var collectionsFirstCol1 = document.createElement("div");
-collectionsFirstCol1.setAttribute("class","col-3");
+collectionsFirstCol1.setAttribute("class","col-6");
+collectionsFirstCol1.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsFirstRow.append(collectionsFirstCol1);
 
 var collectionsFirstImageContainer1 = document.createElement("div");
@@ -959,7 +992,8 @@ collectionsFirstImageContainer1.append(collectionsFirstCaptionSubTitle1,collecti
 
 
 var collectionsFirstCol2 = document.createElement("div");
-collectionsFirstCol2.setAttribute("class","col-3");
+collectionsFirstCol2.setAttribute("class","col-6");
+collectionsFirstCol2.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsFirstRow.append(collectionsFirstCol2);
 
 var collectionsFirstImageContainer2 = document.createElement("div");
@@ -1029,7 +1063,8 @@ collectionsFirstImageContainer2.append(collectionsFirstCaptionSubTitle2,collecti
 
 
 var collectionsFirstCol3 = document.createElement("div");
-collectionsFirstCol3.setAttribute("class","col-3");
+collectionsFirstCol3.setAttribute("class","col-6");
+collectionsFirstCol3.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsFirstRow.append(collectionsFirstCol3);
 
 var collectionsFirstImageContainer3 = document.createElement("div");
@@ -1095,8 +1130,10 @@ collectionsFirstImageContainer3.append(collectionsFirstCaptionSubTitle3,collecti
 
 
 
+
 var collectionsFirstCol4 = document.createElement("div");
-collectionsFirstCol4.setAttribute("class","col-3");
+collectionsFirstCol4.setAttribute("class","col-6");
+collectionsFirstCol4.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsFirstRow.append(collectionsFirstCol4);
 
 var collectionsFirstImageContainer4 = document.createElement("div");
@@ -1162,62 +1199,60 @@ collectionsFirstImageContainer4.append(collectionsFirstCaptionSubTitle4,collecti
 
 
 
-var collectionsFirstCol5 = document.createElement("div");
-collectionsFirstCol5.setAttribute("class","col-3");
-collectionsFirstRow.append(collectionsFirstCol5);
+// var collectionsFirstCol5 = document.createElement("div");
+// collectionsFirstCol5.setAttribute("class","col-3");
+// collectionsFirstRow.append(collectionsFirstCol5);
 
-var collectionsFirstImageContainer5 = document.createElement("div");
-collectionsFirstImageContainer5.setAttribute("class","collectionsFirst__image-container");
-collectionsFirstImageContainer5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
-collectionsFirstImageContainer5.style.width = "100%";
-collectionsFirstImageContainer5.style.height = "100%";
-collectionsFirstImageContainer5.style.position = "relative"
-collectionsFirstImageContainer5.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
-collectionsFirstImageContainer5.style.backgroundColor = "#fcfdff"
-collectionsFirstCol5.append(collectionsFirstImageContainer5);
+// var collectionsFirstImageContainer5 = document.createElement("div");
+// collectionsFirstImageContainer5.setAttribute("class","collectionsFirst__image-container");
+// collectionsFirstImageContainer5.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+// collectionsFirstImageContainer5.style.width = "100%";
+// collectionsFirstImageContainer5.style.height = "100%";
+// collectionsFirstImageContainer5.style.position = "relative"
+// collectionsFirstImageContainer5.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+// collectionsFirstImageContainer5.style.backgroundColor = "#fcfdff"
+// collectionsFirstCol5.append(collectionsFirstImageContainer5);
 
-var collectionsFirstSaleCard = document.createElement("div");
-collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
-collectionsFirstSaleCard.innerText = "SALE!"
-collectionsFirstSaleCard.style.position = "absolute";
-collectionsFirstSaleCard.style.top = "20px";
-collectionsFirstSaleCard.style.left = "20px";
-collectionsFirstSaleCard.style.fontSize = "14px";
-collectionsFirstSaleCard.style.backgroundColor = "white";
-collectionsFirstSaleCard.style.padding = "5px"
-collectionsFirstSaleCard.style.fontWeight = "600"
-collectionsFirstImageContainer5.append(collectionsFirstSaleCard)
-
-
-var collectionsFirstImage5 = document.createElement('img');
-collectionsFirstImage5.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage5.setAttribute("src","./images/collectionsFirst-card__image5.webp");
-collectionsFirstImage5.style.width = "100%";
-collectionsFirstImage5.style.height = "100%";
-collectionsFirstImageContainer5.append(collectionsFirstImage5);
-
-var collectionsFirstCaptionSubTitle5 = document.createElement("p");
-collectionsFirstCaptionSubTitle5.setAttribute("class","collectionsFirst__image--captionSubTitle");
-collectionsFirstCaptionSubTitle5.classList.add("pt-3")
-collectionsFirstCaptionSubTitle5.innerText = "Crepe Saree";
-collectionsFirstCaptionSubTitle5.style.color = "#bbbdbf"
-collectionsFirstCaptionSubTitle5.style.fontSize = "14px"
-collectionsFirstCaptionSubTitle5.style.fontWeight = "400"
-
-var collectionsFirstCaptionTitle5 = document.createElement("p");
-collectionsFirstCaptionTitle5.setAttribute("class","collectionsFirst__image--captionTitle");
-collectionsFirstCaptionTitle5.innerText = "Dark Blue Crepe Saree";
-collectionsFirstCaptionTitle5.style.fontSize = "18px"
-collectionsFirstCaptionTitle5.style.fontWeight = "300"
-
-var collectionsFirstCaptionPrice5 = document.createElement("p");
-collectionsFirstCaptionPrice5.setAttribute("class","collectionsFirst__image--captionPrice");
-collectionsFirstCaptionPrice5.innerText = "BUY NOW";
-collectionsFirstCaptionPrice5.style.fontSize = "16px";
-collectionsFirstCaptionPrice5.style.fontWeight = "600"
-collectionsFirstImageContainer5.append(collectionsFirstCaptionSubTitle5,collectionsFirstCaptionTitle5,collectionsFirstCaptionPrice5);
+// var collectionsFirstSaleCard = document.createElement("div");
+// collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
+// collectionsFirstSaleCard.innerText = "SALE!"
+// collectionsFirstSaleCard.style.position = "absolute";
+// collectionsFirstSaleCard.style.top = "20px";
+// collectionsFirstSaleCard.style.left = "20px";
+// collectionsFirstSaleCard.style.fontSize = "14px";
+// collectionsFirstSaleCard.style.backgroundColor = "white";
+// collectionsFirstSaleCard.style.padding = "5px"
+// collectionsFirstSaleCard.style.fontWeight = "600"
+// collectionsFirstImageContainer5.append(collectionsFirstSaleCard)
 
 
+// var collectionsFirstImage5 = document.createElement('img');
+// collectionsFirstImage5.setAttribute("class","collectionsFirst__image");
+// collectionsFirstImage5.setAttribute("src","./images/collectionsFirst-card__image5.webp");
+// collectionsFirstImage5.style.width = "100%";
+// collectionsFirstImage5.style.height = "100%";
+// collectionsFirstImageContainer5.append(collectionsFirstImage5);
+
+// var collectionsFirstCaptionSubTitle5 = document.createElement("p");
+// collectionsFirstCaptionSubTitle5.setAttribute("class","collectionsFirst__image--captionSubTitle");
+// collectionsFirstCaptionSubTitle5.classList.add("pt-3")
+// collectionsFirstCaptionSubTitle5.innerText = "Crepe Saree";
+// collectionsFirstCaptionSubTitle5.style.color = "#bbbdbf"
+// collectionsFirstCaptionSubTitle5.style.fontSize = "14px"
+// collectionsFirstCaptionSubTitle5.style.fontWeight = "400"
+
+// var collectionsFirstCaptionTitle5 = document.createElement("p");
+// collectionsFirstCaptionTitle5.setAttribute("class","collectionsFirst__image--captionTitle");
+// collectionsFirstCaptionTitle5.innerText = "Dark Blue Crepe Saree";
+// collectionsFirstCaptionTitle5.style.fontSize = "18px"
+// collectionsFirstCaptionTitle5.style.fontWeight = "300"
+
+// var collectionsFirstCaptionPrice5 = document.createElement("p");
+// collectionsFirstCaptionPrice5.setAttribute("class","collectionsFirst__image--captionPrice");
+// collectionsFirstCaptionPrice5.innerText = "BUY NOW";
+// collectionsFirstCaptionPrice5.style.fontSize = "16px";
+// collectionsFirstCaptionPrice5.style.fontWeight = "600"
+// collectionsFirstImageContainer5.append(collectionsFirstCaptionSubTitle5,collectionsFirstCaptionTitle5,collectionsFirstCaptionPrice5);
 
 
 
@@ -1227,60 +1262,62 @@ collectionsFirstImageContainer5.append(collectionsFirstCaptionSubTitle5,collecti
 
 
 
-var collectionsFirstCol6 = document.createElement("div");
-collectionsFirstCol6.setAttribute("class","col-3");
-collectionsFirstRow.append(collectionsFirstCol6);
-
-var collectionsFirstImageContainer6 = document.createElement("div");
-collectionsFirstImageContainer6.setAttribute("class","collectionsFirst__image-container");
-collectionsFirstImageContainer6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
-collectionsFirstImageContainer6.style.width = "100%";
-collectionsFirstImageContainer6.style.height = "100%";
-collectionsFirstImageContainer6.style.position = "relative"
-collectionsFirstImageContainer6.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
-collectionsFirstImageContainer6.style.backgroundColor = "#fcfdff"
-collectionsFirstCol6.append(collectionsFirstImageContainer6);
-
-var collectionsFirstSaleCard = document.createElement("div");
-collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
-collectionsFirstSaleCard.innerText = "SALE!"
-collectionsFirstSaleCard.style.position = "absolute";
-collectionsFirstSaleCard.style.top = "20px";
-collectionsFirstSaleCard.style.left = "20px";
-collectionsFirstSaleCard.style.fontSize = "14px";
-collectionsFirstSaleCard.style.backgroundColor = "white";
-collectionsFirstSaleCard.style.padding = "5px"
-collectionsFirstSaleCard.style.fontWeight = "600"
-collectionsFirstImageContainer6.append(collectionsFirstSaleCard)
 
 
-var collectionsFirstImage6 = document.createElement('img');
-collectionsFirstImage6.setAttribute("class","collectionsFirst__image");
-collectionsFirstImage6.setAttribute("src","./images/collectionsFirst-card__image6.webp");
-collectionsFirstImage6.style.width = "100%";
-collectionsFirstImage6.style.height = "100%";
-collectionsFirstImageContainer6.append(collectionsFirstImage6);
+// var collectionsFirstCol6 = document.createElement("div");
+// collectionsFirstCol6.setAttribute("class","col-3");
+// collectionsFirstRow.append(collectionsFirstCol6);
 
-var collectionsFirstCaptionSubTitle6 = document.createElement("p");
-collectionsFirstCaptionSubTitle6.setAttribute("class","collectionsFirst__image--captionSubTitle");
-collectionsFirstCaptionSubTitle6.classList.add("pt-3")
-collectionsFirstCaptionSubTitle6.innerText = "Crepe Saree";
-collectionsFirstCaptionSubTitle6.style.color = "#bbbdbf"
-collectionsFirstCaptionSubTitle6.style.fontSize = "14px"
-collectionsFirstCaptionSubTitle6.style.fontWeight = "400"
+// var collectionsFirstImageContainer6 = document.createElement("div");
+// collectionsFirstImageContainer6.setAttribute("class","collectionsFirst__image-container");
+// collectionsFirstImageContainer6.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+// collectionsFirstImageContainer6.style.width = "100%";
+// collectionsFirstImageContainer6.style.height = "100%";
+// collectionsFirstImageContainer6.style.position = "relative"
+// collectionsFirstImageContainer6.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+// collectionsFirstImageContainer6.style.backgroundColor = "#fcfdff"
+// collectionsFirstCol6.append(collectionsFirstImageContainer6);
 
-var collectionsFirstCaptionTitle6 = document.createElement("p");
-collectionsFirstCaptionTitle6.setAttribute("class","collectionsFirst__image--captionTitle");
-collectionsFirstCaptionTitle6.innerText = "Dark Blue Crepe Saree";
-collectionsFirstCaptionTitle6.style.fontSize = "18px"
-collectionsFirstCaptionTitle6.style.fontWeight = "300"
+// var collectionsFirstSaleCard = document.createElement("div");
+// collectionsFirstSaleCard.setAttribute("class","collectionsFirst__sale-card");
+// collectionsFirstSaleCard.innerText = "SALE!"
+// collectionsFirstSaleCard.style.position = "absolute";
+// collectionsFirstSaleCard.style.top = "20px";
+// collectionsFirstSaleCard.style.left = "20px";
+// collectionsFirstSaleCard.style.fontSize = "14px";
+// collectionsFirstSaleCard.style.backgroundColor = "white";
+// collectionsFirstSaleCard.style.padding = "5px"
+// collectionsFirstSaleCard.style.fontWeight = "600"
+// collectionsFirstImageContainer6.append(collectionsFirstSaleCard)
 
-var collectionsFirstCaptionPrice6 = document.createElement("p");
-collectionsFirstCaptionPrice6.setAttribute("class","collectionsFirst__image--captionPrice");
-collectionsFirstCaptionPrice6.innerText = "BUY NOW";
-collectionsFirstCaptionPrice6.style.fontSize = "16px";
-collectionsFirstCaptionPrice6.style.fontWeight = "600"
-collectionsFirstImageContainer6.append(collectionsFirstCaptionSubTitle6,collectionsFirstCaptionTitle6,collectionsFirstCaptionPrice6);
+
+// var collectionsFirstImage6 = document.createElement('img');
+// collectionsFirstImage6.setAttribute("class","collectionsFirst__image");
+// collectionsFirstImage6.setAttribute("src","./images/collectionsFirst-card__image6.webp");
+// collectionsFirstImage6.style.width = "100%";
+// collectionsFirstImage6.style.height = "100%";
+// collectionsFirstImageContainer6.append(collectionsFirstImage6);
+
+// var collectionsFirstCaptionSubTitle6 = document.createElement("p");
+// collectionsFirstCaptionSubTitle6.setAttribute("class","collectionsFirst__image--captionSubTitle");
+// collectionsFirstCaptionSubTitle6.classList.add("pt-3")
+// collectionsFirstCaptionSubTitle6.innerText = "Crepe Saree";
+// collectionsFirstCaptionSubTitle6.style.color = "#bbbdbf"
+// collectionsFirstCaptionSubTitle6.style.fontSize = "14px"
+// collectionsFirstCaptionSubTitle6.style.fontWeight = "400"
+
+// var collectionsFirstCaptionTitle6 = document.createElement("p");
+// collectionsFirstCaptionTitle6.setAttribute("class","collectionsFirst__image--captionTitle");
+// collectionsFirstCaptionTitle6.innerText = "Dark Blue Crepe Saree";
+// collectionsFirstCaptionTitle6.style.fontSize = "18px"
+// collectionsFirstCaptionTitle6.style.fontWeight = "300"
+
+// var collectionsFirstCaptionPrice6 = document.createElement("p");
+// collectionsFirstCaptionPrice6.setAttribute("class","collectionsFirst__image--captionPrice");
+// collectionsFirstCaptionPrice6.innerText = "BUY NOW";
+// collectionsFirstCaptionPrice6.style.fontSize = "16px";
+// collectionsFirstCaptionPrice6.style.fontWeight = "600"
+// collectionsFirstImageContainer6.append(collectionsFirstCaptionSubTitle6,collectionsFirstCaptionTitle6,collectionsFirstCaptionPrice6);
 
 
 
@@ -1326,11 +1363,12 @@ container.append(scrollWrapper2);
 
 var collectionsSecondRow = document.createElement("div");
 collectionsSecondRow.setAttribute("class","row");
-collectionsSecondRow.classList.add("d-flex","flex-nowrap");
+collectionsSecondRow.classList.add("d-flex");
 scrollWrapper2.append(collectionsSecondRow);
 
 var collectionsSecondCol1 = document.createElement("div");
-collectionsSecondCol1.setAttribute("class","col-3");
+collectionsSecondCol1.setAttribute("class","col-6");
+collectionsSecondCol1.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsSecondRow.append(collectionsSecondCol1);
 
 var collectionsSecondImageContainer1 = document.createElement("div");
@@ -1387,7 +1425,8 @@ collectionsSecondImageContainer1.append(collectionsSecondCaptionSubTitle1,collec
 
 
 var collectionsSecondCol2 = document.createElement("div");
-collectionsSecondCol2.setAttribute("class","col-3");
+collectionsSecondCol2.setAttribute("class","col-6");
+collectionsSecondCol2.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsSecondRow.append(collectionsSecondCol2);
 
 var collectionsSecondImageContainer2 = document.createElement("div");
@@ -1457,7 +1496,8 @@ collectionsSecondImageContainer2.append(collectionsSecondCaptionSubTitle2,collec
 
 
 var collectionsSecondCol3 = document.createElement("div");
-collectionsSecondCol3.setAttribute("class","col-3");
+collectionsSecondCol3.setAttribute("class","col-6");
+collectionsSecondCol3.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsSecondRow.append(collectionsSecondCol3);
 
 var collectionsSecondImageContainer3 = document.createElement("div");
@@ -1524,7 +1564,8 @@ collectionsSecondImageContainer3.append(collectionsSecondCaptionSubTitle3,collec
 
 
 var collectionsSecondCol4 = document.createElement("div");
-collectionsSecondCol4.setAttribute("class","col-3");
+collectionsSecondCol4.setAttribute("class","col-6");
+collectionsSecondCol4.classList.add("col-md-3","mb-3","mb-md-0")
 collectionsSecondRow.append(collectionsSecondCol4);
 
 var collectionsSecondImageContainer4 = document.createElement("div");
@@ -1593,7 +1634,8 @@ footerRow1.setAttribute("class","row");
 footer.append(footerRow1);
 
 var footerCol1 = document.createElement("div");
-footerCol1.setAttribute("class","col-3");
+footerCol1.setAttribute("class","col-12");
+footerCol1.classList.add("col-sm-6","col-lg-3","mb-2","mb-lg-0")
 footerRow1.append(footerCol1);
 
 var footerCol1Heading = document.createElement("h5");
@@ -1623,7 +1665,8 @@ footerCol1Text5.innerText = "Collections"
 footerCol1.append(footerCol1Heading,footerCol1Text1,footerCol1Text2,footerCol1Text3,footerCol1Text4,footerCol1Text5);
 
 var footerCol2 = document.createElement("div");
-footerCol2.setAttribute("class","col-3");
+footerCol2.setAttribute("class","col-12");
+footerCol2.classList.add("col-sm-6","col-lg-3","mb-2","mb-lg-0")
 footerRow1.append(footerCol2);
 
 var footerCol2Heading = document.createElement("h5");
@@ -1653,7 +1696,8 @@ footerCol2Text5.innerText = "Terms&Conditions"
 footerCol2.append(footerCol2Heading,footerCol2Text1,footerCol2Text2,footerCol2Text3,footerCol2Text4,footerCol2Text5);
 
 var footerCol3 = document.createElement("div");
-footerCol3.setAttribute("class","col-3");
+footerCol3.setAttribute("class","col-12");
+footerCol3.classList.add("col-sm-6","col-lg-3","mb-2","mb-lg-0")
 footerRow1.append(footerCol3);
 
 var footerCol3Heading = document.createElement("h5");
@@ -1683,7 +1727,8 @@ footerCol3Text5.innerText = "Collections"
 footerCol3.append(footerCol3Heading,footerCol3Text1,footerCol3Text2,footerCol3Text3,footerCol3Text4,footerCol3Text5);
 
 var footerCol4 = document.createElement("div");
-footerCol4.setAttribute("class","col-3");
+footerCol4.setAttribute("class","col-12");
+footerCol4.classList.add("col-sm-6","col-lg-3","mb-2","mb-lg-0")
 footerRow1.append(footerCol4);
 
 var footerCol4Heading = document.createElement("h5");
@@ -1726,7 +1771,13 @@ var footerCol5Text1 = document.createElement("p");
 footerCol5Text1.setAttribute("class","footer__text");
 footerCol5Text1.classList.add("text-secondary");
 footerCol5Text1.innerText = "sarees | silk saree | banarasi saree | cotton saree | party wear saree | linen sarees | soft silk sarees | wedding sarees | black saree | kancheepuram sarees | banarasi silk saree | bridal saree | red saree | violet saree | white sarees | yellow sarees | orange sarees | rani pink sarees | green saree | blue saree | pink saree | gold colour saree | plain border saree"
-footerCol5.append(footerCol5Heading,footerCol5Text1);
+
+var footerCol5Text2 = document.createElement("p");
+footerCol5Text2.setAttribute("class","footer__text");
+footerCol5Text2.classList.add("pt-3","text-secondary");
+footerCol5Text2.classList.add("text-secondary");
+footerCol5Text2.innerText = " 2025 Seematti. All Rights Reserved. Powered by BBP India Communications."
+footerCol5.append(footerCol5Heading,footerCol5Text1,footerCol5Text2);
 
 
 document.body.append(banner,nav,container,footer);
