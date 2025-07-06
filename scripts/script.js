@@ -80,6 +80,7 @@ navbarRight.append(navItemPrice);
 
 var container = document.createElement("div");
 container.setAttribute("class","main-container");
+// container.classList.add("overflow-x-auto")
 container.style.padding = "10px 7% 10px 7%"
 
 var heroRow = document.createElement("div");
@@ -890,10 +891,15 @@ collectionsFirstTitleHeading.style.fontStyle = "italic";
 collectionsFirstTitleHeading.style.fontWeight = "600"
 collectionsFirstTitle.append(collectionsFirstTitleParagraph,collectionsFirstTitleHeading);
 
+var scrollWrapper = document.createElement("div");
+scrollWrapper.setAttribute("class","collectionsFirst__scroll-wrapper");
+scrollWrapper.classList.add("overflow-x-auto");
+container.append(scrollWrapper);
+
 var collectionsFirstRow = document.createElement("div");
 collectionsFirstRow.setAttribute("class","row");
-collectionsFirstRow.classList.add("d-flex","overflow-x-scroll");
-container.append(collectionsFirstRow);
+collectionsFirstRow.classList.add("d-flex","flex-nowrap");
+scrollWrapper.append(collectionsFirstRow);
 
 var collectionsFirstCol1 = document.createElement("div");
 collectionsFirstCol1.setAttribute("class","col-3");
@@ -1279,6 +1285,161 @@ collectionsFirstImageContainer6.append(collectionsFirstCaptionSubTitle6,collecti
 
 
 
+// collection second
+
+
+var collectionsSecondRow2 = document.createElement("div");
+collectionsSecondRow2.setAttribute("class","row");
+collectionsSecondRow2.classList.add("pt-5");
+container.append(collectionsSecondRow2);
+
+var collectionsSecondCol = document.createElement("div");
+collectionsSecondCol.setAttribute("class","col-12");
+collectionsSecondRow2.append(collectionsSecondCol);
+
+var collectionsSecondTitle = document.createElement("div");
+collectionsSecondTitle.setAttribute("class","collectionsSecond__title-container");
+collectionsSecondTitle.classList.add("py-4")
+collectionsSecondTitle.style.width = "100%";
+collectionsSecondCol.append(collectionsSecondTitle);
+
+var collectionsSecondTitleParagraph = document.createElement("p");
+collectionsSecondTitleParagraph.setAttribute("class","collectionsSecond__title--paragraph");
+collectionsSecondTitleParagraph.classList.add("text-danger","text-center");
+collectionsSecondTitleParagraph.innerText = "Flow in the Comfort of Flamboyant Grace";
+collectionsSecondTitleParagraph.style.textTransform = "uppercase";
+collectionsSecondTitleParagraph.style.fontWeight = "500";
+
+var collectionsSecondTitleHeading = document.createElement("h3");
+collectionsSecondTitleHeading.setAttribute("class","collectionsSecond__title--heading");
+collectionsSecondTitleHeading.classList.add("text-center");
+collectionsSecondTitleHeading.innerText = "Our exclusive Churidar Collection"
+collectionsSecondTitleHeading.style.fontStyle = "italic";
+collectionsSecondTitleHeading.style.fontWeight = "600"
+collectionsSecondTitle.append(collectionsSecondTitleParagraph,collectionsSecondTitleHeading);
+
+
+var scrollWrapper2 = document.createElement("div");
+scrollWrapper2.setAttribute("class","collectionsFirst__scroll-wrapper");
+scrollWrapper2.classList.add("overflow-x-auto");
+container.append(scrollWrapper2);
+
+var collectionsSecondRow = document.createElement("div");
+collectionsSecondRow.setAttribute("class","row");
+collectionsSecondRow.classList.add("d-flex","flex-nowrap");
+scrollWrapper2.append(collectionsSecondRow);
+
+var collectionsSecondCol1 = document.createElement("div");
+collectionsSecondCol1.setAttribute("class","col-3");
+collectionsSecondRow.append(collectionsSecondCol1);
+
+var collectionsSecondImageContainer1 = document.createElement("div");
+collectionsSecondImageContainer1.setAttribute("class","collectionsSecond__image-container");
+collectionsSecondImageContainer1.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+collectionsSecondImageContainer1.style.width = "100%";
+collectionsSecondImageContainer1.style.height = "100%";
+collectionsSecondImageContainer1.style.position = "relative"
+collectionsSecondImageContainer1.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+collectionsSecondImageContainer1.style.backgroundColor = "#fcfdff"
+collectionsSecondCol1.append(collectionsSecondImageContainer1);
+
+var collectionsSecondSaleCard = document.createElement("div");
+collectionsSecondSaleCard.setAttribute("class","collectionsSecond__sale-card");
+collectionsSecondSaleCard.innerText = "SALE!"
+collectionsSecondSaleCard.style.position = "absolute";
+collectionsSecondSaleCard.style.top = "20px";
+collectionsSecondSaleCard.style.left = "20px";
+collectionsSecondSaleCard.style.fontSize = "14px";
+collectionsSecondSaleCard.style.backgroundColor = "white";
+collectionsSecondSaleCard.style.padding = "5px"
+collectionsSecondSaleCard.style.fontWeight = "600"
+collectionsSecondImageContainer1.append(collectionsSecondSaleCard)
+
+
+var collectionsSecondImage1 = document.createElement('img');
+collectionsSecondImage1.setAttribute("class","collectionsSecond__image");
+collectionsSecondImage1.setAttribute("src","./images/collectionsSecond-card__image1.webp");
+collectionsSecondImage1.style.width = "100%";
+collectionsSecondImage1.style.height = "100%";
+collectionsSecondImageContainer1.append(collectionsSecondImage1);
+
+var collectionsSecondCaptionSubTitle1 = document.createElement("p");
+collectionsSecondCaptionSubTitle1.setAttribute("class","collectionsSecond__image--captionSubTitle");
+collectionsSecondCaptionSubTitle1.classList.add("pt-3")
+collectionsSecondCaptionSubTitle1.innerText = "Crepe Saree";
+collectionsSecondCaptionSubTitle1.style.color = "#bbbdbf"
+collectionsSecondCaptionSubTitle1.style.fontSize = "14px"
+collectionsSecondCaptionSubTitle1.style.fontWeight = "400"
+
+var collectionsSecondCaptionTitle1 = document.createElement("p");
+collectionsSecondCaptionTitle1.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle1.innerText = "Dark Blue Crepe Saree";
+collectionsSecondCaptionTitle1.style.fontSize = "18px"
+collectionsSecondCaptionTitle1.style.fontWeight = "300"
+
+var collectionsSecondCaptionPrice1 = document.createElement("p");
+collectionsSecondCaptionPrice1.setAttribute("class","collectionsSecond__image--captionPrice");
+collectionsSecondCaptionPrice1.innerText = "BUY NOW";
+collectionsSecondCaptionPrice1.style.fontSize = "16px";
+collectionsSecondCaptionPrice1.style.fontWeight = "600"
+collectionsSecondImageContainer1.append(collectionsSecondCaptionSubTitle1,collectionsSecondCaptionTitle1,collectionsSecondCaptionPrice1);
+
+
+
+var collectionsSecondCol2 = document.createElement("div");
+collectionsSecondCol2.setAttribute("class","col-3");
+collectionsSecondRow.append(collectionsSecondCol2);
+
+var collectionsSecondImageContainer2 = document.createElement("div");
+collectionsSecondImageContainer2.setAttribute("class","collectionsSecond__image-container");
+collectionsSecondImageContainer2.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+collectionsSecondImageContainer2.style.width = "100%";
+collectionsSecondImageContainer2.style.height = "100%";
+collectionsSecondImageContainer2.style.position = "relative"
+collectionsSecondImageContainer2.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+collectionsSecondImageContainer2.style.backgroundColor = "#fcfdff"
+collectionsSecondCol2.append(collectionsSecondImageContainer2);
+
+var collectionsSecondSaleCard = document.createElement("div");
+collectionsSecondSaleCard.setAttribute("class","collectionsSecond__sale-card");
+collectionsSecondSaleCard.innerText = "SALE!"
+collectionsSecondSaleCard.style.position = "absolute";
+collectionsSecondSaleCard.style.top = "20px";
+collectionsSecondSaleCard.style.left = "20px";
+collectionsSecondSaleCard.style.fontSize = "14px";
+collectionsSecondSaleCard.style.backgroundColor = "white";
+collectionsSecondSaleCard.style.padding = "5px"
+collectionsSecondSaleCard.style.fontWeight = "600"
+collectionsSecondImageContainer2.append(collectionsSecondSaleCard)
+
+
+var collectionsSecondImage2 = document.createElement('img');
+collectionsSecondImage2.setAttribute("class","collectionsSecond__image");
+collectionsSecondImage2.setAttribute("src","./images/collectionsSecond-card__image2.webp");
+collectionsSecondImage2.style.width = "100%";
+collectionsSecondImage2.style.height = "100%";
+collectionsSecondImageContainer2.append(collectionsSecondImage2);
+
+var collectionsSecondCaptionSubTitle2 = document.createElement("p");
+collectionsSecondCaptionSubTitle2.setAttribute("class","collectionsSecond__image--captionSubTitle");
+collectionsSecondCaptionSubTitle2.classList.add("pt-3")
+collectionsSecondCaptionSubTitle2.innerText = "Crepe Saree";
+collectionsSecondCaptionSubTitle2.style.color = "#bbbdbf"
+collectionsSecondCaptionSubTitle2.style.fontSize = "14px"
+collectionsSecondCaptionSubTitle2.style.fontWeight = "400"
+
+var collectionsSecondCaptionTitle2 = document.createElement("p");
+collectionsSecondCaptionTitle2.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle2.innerText = "Dark Blue Crepe Saree";
+collectionsSecondCaptionTitle2.style.fontSize = "18px"
+collectionsSecondCaptionTitle2.style.fontWeight = "300"
+
+var collectionsSecondCaptionPrice2 = document.createElement("p");
+collectionsSecondCaptionPrice2.setAttribute("class","collectionsSecond__image--captionPrice");
+collectionsSecondCaptionPrice2.innerText = "BUY NOW";
+collectionsSecondCaptionPrice2.style.fontSize = "16px";
+collectionsSecondCaptionPrice2.style.fontWeight = "600"
+collectionsSecondImageContainer2.append(collectionsSecondCaptionSubTitle2,collectionsSecondCaptionTitle2,collectionsSecondCaptionPrice2);
 
 
 
@@ -1288,4 +1449,284 @@ collectionsFirstImageContainer6.append(collectionsFirstCaptionSubTitle6,collecti
 
 
 
-document.body.append(banner,nav,container);
+
+
+
+
+
+
+
+var collectionsSecondCol3 = document.createElement("div");
+collectionsSecondCol3.setAttribute("class","col-3");
+collectionsSecondRow.append(collectionsSecondCol3);
+
+var collectionsSecondImageContainer3 = document.createElement("div");
+collectionsSecondImageContainer3.setAttribute("class","collectionsSecond__image-container");
+collectionsSecondImageContainer3.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+collectionsSecondImageContainer3.style.width = "100%";
+collectionsSecondImageContainer3.style.height = "100%";
+collectionsSecondImageContainer3.style.position = "relative"
+collectionsSecondImageContainer3.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+collectionsSecondImageContainer3.style.backgroundColor = "#fcfdff"
+collectionsSecondCol3.append(collectionsSecondImageContainer3);
+
+var collectionsSecondSaleCard = document.createElement("div");
+collectionsSecondSaleCard.setAttribute("class","collectionsSecond__sale-card");
+collectionsSecondSaleCard.innerText = "SALE!"
+collectionsSecondSaleCard.style.position = "absolute";
+collectionsSecondSaleCard.style.top = "20px";
+collectionsSecondSaleCard.style.left = "20px";
+collectionsSecondSaleCard.style.fontSize = "14px";
+collectionsSecondSaleCard.style.backgroundColor = "white";
+collectionsSecondSaleCard.style.padding = "5px"
+collectionsSecondSaleCard.style.fontWeight = "600"
+collectionsSecondImageContainer3.append(collectionsSecondSaleCard)
+
+
+var collectionsSecondImage3 = document.createElement('img');
+collectionsSecondImage3.setAttribute("class","collectionsSecond__image");
+collectionsSecondImage3.setAttribute("src","./images/collectionsSecond-card__image3.webp");
+collectionsSecondImage3.style.width = "100%";
+collectionsSecondImage3.style.height = "100%";
+collectionsSecondImageContainer3.append(collectionsSecondImage3);
+
+var collectionsSecondCaptionSubTitle3 = document.createElement("p");
+collectionsSecondCaptionSubTitle3.setAttribute("class","collectionsSecond__image--captionSubTitle");
+collectionsSecondCaptionSubTitle3.classList.add("pt-3")
+collectionsSecondCaptionSubTitle3.innerText = "Crepe Saree";
+collectionsSecondCaptionSubTitle3.style.color = "#bbbdbf"
+collectionsSecondCaptionSubTitle3.style.fontSize = "14px"
+collectionsSecondCaptionSubTitle3.style.fontWeight = "400"
+
+var collectionsSecondCaptionTitle3 = document.createElement("p");
+collectionsSecondCaptionTitle3.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle3.innerText = "Dark Blue Crepe Saree";
+collectionsSecondCaptionTitle3.style.fontSize = "18px"
+collectionsSecondCaptionTitle3.style.fontWeight = "300"
+
+var collectionsSecondCaptionPrice3 = document.createElement("p");
+collectionsSecondCaptionPrice3.setAttribute("class","collectionsSecond__image--captionPrice");
+collectionsSecondCaptionPrice3.innerText = "BUY NOW";
+collectionsSecondCaptionPrice3.style.fontSize = "16px";
+collectionsSecondCaptionPrice3.style.fontWeight = "600"
+collectionsSecondImageContainer3.append(collectionsSecondCaptionSubTitle3,collectionsSecondCaptionTitle3,collectionsSecondCaptionPrice3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+var collectionsSecondCol4 = document.createElement("div");
+collectionsSecondCol4.setAttribute("class","col-3");
+collectionsSecondRow.append(collectionsSecondCol4);
+
+var collectionsSecondImageContainer4 = document.createElement("div");
+collectionsSecondImageContainer4.setAttribute("class","collectionsSecond__image-container");
+collectionsSecondImageContainer4.classList.add("d-flex","flex-column","justify-content-center","align-items-center");
+collectionsSecondImageContainer4.style.width = "100%";
+collectionsSecondImageContainer4.style.height = "100%";
+collectionsSecondImageContainer4.style.position = "relative"
+collectionsSecondImageContainer4.style.boxShadow = "0 3px 40px rgb(0 0 0 / 20%)"
+collectionsSecondImageContainer4.style.backgroundColor = "#fcfdff"
+collectionsSecondCol4.append(collectionsSecondImageContainer4);
+
+var collectionsSecondSaleCard = document.createElement("div");
+collectionsSecondSaleCard.setAttribute("class","collectionsSecond__sale-card");
+collectionsSecondSaleCard.innerText = "SALE!"
+collectionsSecondSaleCard.style.position = "absolute";
+collectionsSecondSaleCard.style.top = "20px";
+collectionsSecondSaleCard.style.left = "20px";
+collectionsSecondSaleCard.style.fontSize = "14px";
+collectionsSecondSaleCard.style.backgroundColor = "white";
+collectionsSecondSaleCard.style.padding = "5px"
+collectionsSecondSaleCard.style.fontWeight = "600"
+collectionsSecondImageContainer4.append(collectionsSecondSaleCard)
+
+
+var collectionsSecondImage4 = document.createElement('img');
+collectionsSecondImage4.setAttribute("class","collectionsSecond__image");
+collectionsSecondImage4.setAttribute("src","./images/collectionsSecond-card__image4.webp");
+collectionsSecondImage4.style.width = "100%";
+collectionsSecondImage4.style.height = "100%";
+collectionsSecondImageContainer4.append(collectionsSecondImage4);
+
+var collectionsSecondCaptionSubTitle4 = document.createElement("p");
+collectionsSecondCaptionSubTitle4.setAttribute("class","collectionsSecond__image--captionSubTitle");
+collectionsSecondCaptionSubTitle4.classList.add("pt-3")
+collectionsSecondCaptionSubTitle4.innerText = "Crepe Saree";
+collectionsSecondCaptionSubTitle4.style.color = "#bbbdbf"
+collectionsSecondCaptionSubTitle4.style.fontSize = "14px"
+collectionsSecondCaptionSubTitle4.style.fontWeight = "400"
+
+var collectionsSecondCaptionTitle4 = document.createElement("p");
+collectionsSecondCaptionTitle4.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle4.innerText = "Dark Blue Crepe Saree";
+collectionsSecondCaptionTitle4.style.fontSize = "18px"
+collectionsSecondCaptionTitle4.style.fontWeight = "300"
+
+var collectionsSecondCaptionPrice4 = document.createElement("p");
+collectionsSecondCaptionPrice4.setAttribute("class","collectionsSecond__image--captionPrice");
+collectionsSecondCaptionPrice4.innerText = "BUY NOW";
+collectionsSecondCaptionPrice4.style.fontSize = "16px";
+collectionsSecondCaptionPrice4.style.fontWeight = "600"
+collectionsSecondImageContainer4.append(collectionsSecondCaptionSubTitle4,collectionsSecondCaptionTitle4,collectionsSecondCaptionPrice4);
+
+
+// footer
+
+
+var footer = document.createElement("footer");
+footer.style.padding = "7% 7% 10px 7%";
+footer.style.marginTop = "20px";
+footer.style.backgroundColor = "black";
+footer.style.color = "white";
+
+var footerRow1 = document.createElement("div");
+footerRow1.setAttribute("class","row");
+footer.append(footerRow1);
+
+var footerCol1 = document.createElement("div");
+footerCol1.setAttribute("class","col-3");
+footerRow1.append(footerCol1);
+
+var footerCol1Heading = document.createElement("h5");
+footerCol1Heading.setAttribute("class","footer__headings");
+footerCol1Heading.innerText = "Quick Links";
+footerCol1Heading.style.fontWeight = "700";
+
+var footerCol1Text1 = document.createElement("p");
+footerCol1Text1.setAttribute("class","footer__text");
+footerCol1Text1.innerText = "About Us"
+
+var footerCol1Text2 = document.createElement("p");
+footerCol1Text2.setAttribute("class","footer__text");
+footerCol1Text2.innerText = "Sarees"
+
+var footerCol1Text3 = document.createElement("p");
+footerCol1Text3.setAttribute("class","footer__text");
+footerCol1Text3.innerText = "Churidars"
+
+var footerCol1Text4 = document.createElement("p");
+footerCol1Text4.setAttribute("class","footer__text");
+footerCol1Text4.innerText = "Blouses"
+
+var footerCol1Text5 = document.createElement("p");
+footerCol1Text5.setAttribute("class","footer__text");
+footerCol1Text5.innerText = "Collections"
+footerCol1.append(footerCol1Heading,footerCol1Text1,footerCol1Text2,footerCol1Text3,footerCol1Text4,footerCol1Text5);
+
+var footerCol2 = document.createElement("div");
+footerCol2.setAttribute("class","col-3");
+footerRow1.append(footerCol2);
+
+var footerCol2Heading = document.createElement("h5");
+footerCol2Heading.setAttribute("class","footer__headings");
+footerCol2Heading.innerText = "Policies";
+footerCol2Heading.style.fontWeight = "700";
+
+var footerCol2Text1 = document.createElement("p");
+footerCol2Text1.setAttribute("class","footer__text");
+footerCol2Text1.innerText = "Shipping Policy"
+
+var footerCol2Text2 = document.createElement("p");
+footerCol2Text2.setAttribute("class","footer__text");
+footerCol2Text2.innerText = "Privacy Policy"
+
+var footerCol2Text3 = document.createElement("p");
+footerCol2Text3.setAttribute("class","footer__text");
+footerCol2Text3.innerText = "Refund Policy"
+
+var footerCol2Text4 = document.createElement("p");
+footerCol2Text4.setAttribute("class","footer__text");
+footerCol2Text4.innerText = "Returns Policy"
+
+var footerCol2Text5 = document.createElement("p");
+footerCol2Text5.setAttribute("class","footer__text");
+footerCol2Text5.innerText = "Terms&Conditions"
+footerCol2.append(footerCol2Heading,footerCol2Text1,footerCol2Text2,footerCol2Text3,footerCol2Text4,footerCol2Text5);
+
+var footerCol3 = document.createElement("div");
+footerCol3.setAttribute("class","col-3");
+footerRow1.append(footerCol3);
+
+var footerCol3Heading = document.createElement("h5");
+footerCol3Heading.setAttribute("class","footer__headings");
+footerCol3Heading.innerText = "Let Us Help You";
+footerCol3Heading.style.fontWeight = "700";
+
+var footerCol3Text1 = document.createElement("p");
+footerCol3Text1.setAttribute("class","footer__text");
+footerCol3Text1.innerText = "Help/FAQ"
+
+var footerCol3Text2 = document.createElement("p");
+footerCol3Text2.setAttribute("class","footer__text");
+footerCol3Text2.innerText = "Store Locator"
+
+var footerCol3Text3 = document.createElement("p");
+footerCol3Text3.setAttribute("class","footer__text");
+footerCol3Text3.innerText = "Order Tracking"
+
+var footerCol3Text4 = document.createElement("p");
+footerCol3Text4.setAttribute("class","footer__text");
+footerCol3Text4.innerText = "Blogs"
+
+var footerCol3Text5 = document.createElement("p");
+footerCol3Text5.setAttribute("class","footer__text");
+footerCol3Text5.innerText = "Collections"
+footerCol3.append(footerCol3Heading,footerCol3Text1,footerCol3Text2,footerCol3Text3,footerCol3Text4,footerCol3Text5);
+
+var footerCol4 = document.createElement("div");
+footerCol4.setAttribute("class","col-3");
+footerRow1.append(footerCol4);
+
+var footerCol4Heading = document.createElement("h5");
+footerCol4Heading.setAttribute("class","footer__headings");
+footerCol4Heading.innerText = "Get in Touch";
+footerCol4Heading.style.fontWeight = "700";
+
+var footerCol4Text1 = document.createElement("p");
+footerCol4Text1.setAttribute("class","footer__text");
+footerCol4Text1.innerText = "Email: shop@seematti.com"
+
+var footerCol4Text2 = document.createElement("p");
+footerCol4Text2.setAttribute("class","footer__text");
+footerCol4Text2.innerText = "Call Us:  +91 9847434500"
+
+var footerCol4Text3 = document.createElement("p");
+footerCol4Text3.setAttribute("class","footer__text");
+footerCol4Text3.innerText = "+91 484 235 3523"
+
+var footerCol4Text4 = document.createElement("p");
+footerCol4Text4.setAttribute("class","footer__text");
+footerCol4Text4.innerText = " / 411 2233"
+
+var footerCol4Text5 = document.createElement("p");
+footerCol4Text5.setAttribute("class","footer__text");
+footerCol4Text5.innerText = "Collections"
+footerCol4.append(footerCol4Heading,footerCol4Text1,footerCol4Text2,footerCol4Text3,footerCol4Text4,footerCol4Text5);
+
+var footerCol5 = document.createElement("div");
+footerCol5.setAttribute("class","col-12");
+footerRow1.append(footerCol5);
+
+var footerCol5Heading = document.createElement("h5");
+footerCol5Heading.setAttribute("class","footer__headings");
+footerCol5Heading.classList.add("border-top","border-white","py-3");
+footerCol5Heading.innerText = "Popular Searches";
+footerCol5Heading.style.fontWeight = "700";
+
+var footerCol5Text1 = document.createElement("p");
+footerCol5Text1.setAttribute("class","footer__text");
+footerCol5Text1.classList.add("text-secondary");
+footerCol5Text1.innerText = "sarees | silk saree | banarasi saree | cotton saree | party wear saree | linen sarees | soft silk sarees | wedding sarees | black saree | kancheepuram sarees | banarasi silk saree | bridal saree | red saree | violet saree | white sarees | yellow sarees | orange sarees | rani pink sarees | green saree | blue saree | pink saree | gold colour saree | plain border saree"
+footerCol5.append(footerCol5Heading,footerCol5Text1);
+
+
+document.body.append(banner,nav,container,footer);
