@@ -1442,7 +1442,7 @@ footerRow1.append(footerCol1);
 
 var footerCol1Heading = document.createElement("h5");
 footerCol1Heading.setAttribute("class","footer__headings");
-footerCol1Heading.innerText = "Quick Links";
+footerCol1Heading.innerText = "IN Progress";
 footerCol1Heading.style.fontWeight = "700";
 
 var footerCol1Text1 = document.createElement("p");
