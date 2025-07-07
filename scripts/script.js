@@ -977,6 +977,7 @@ collectionsFirstCaptionSubTitle1.style.fontWeight = "400"
 
 var collectionsFirstCaptionTitle1 = document.createElement("p");
 collectionsFirstCaptionTitle1.setAttribute("class","collectionsFirst__image--captionTitle");
+collectionsFirstCaptionTitle1.classList.add("text-center");
 collectionsFirstCaptionTitle1.innerText = "Dark Blue Crepe Saree";
 collectionsFirstCaptionTitle1.style.fontSize = "18px"
 collectionsFirstCaptionTitle1.style.fontWeight = "300"
@@ -1032,6 +1033,7 @@ collectionsFirstCaptionSubTitle2.style.fontWeight = "400"
 
 var collectionsFirstCaptionTitle2 = document.createElement("p");
 collectionsFirstCaptionTitle2.setAttribute("class","collectionsFirst__image--captionTitle");
+collectionsFirstCaptionTitle2.classList.add("text-center");
 collectionsFirstCaptionTitle2.innerText = "Dark Blue Crepe Saree";
 collectionsFirstCaptionTitle2.style.fontSize = "18px"
 collectionsFirstCaptionTitle2.style.fontWeight = "300"
@@ -1087,6 +1089,7 @@ collectionsFirstCaptionSubTitle3.style.fontWeight = "400"
 
 var collectionsFirstCaptionTitle3 = document.createElement("p");
 collectionsFirstCaptionTitle3.setAttribute("class","collectionsFirst__image--captionTitle");
+collectionsFirstCaptionTitle3.classList.add("text-center");
 collectionsFirstCaptionTitle3.innerText = "Dark Blue Crepe Saree";
 collectionsFirstCaptionTitle3.style.fontSize = "18px"
 collectionsFirstCaptionTitle3.style.fontWeight = "300"
@@ -1142,6 +1145,7 @@ collectionsFirstCaptionSubTitle4.style.fontWeight = "400"
 
 var collectionsFirstCaptionTitle4 = document.createElement("p");
 collectionsFirstCaptionTitle4.setAttribute("class","collectionsFirst__image--captionTitle");
+collectionsFirstCaptionTitle4.classList.add("text-center");
 collectionsFirstCaptionTitle4.innerText = "Dark Blue Crepe Saree";
 collectionsFirstCaptionTitle4.style.fontSize = "18px"
 collectionsFirstCaptionTitle4.style.fontWeight = "300"
@@ -1239,6 +1243,7 @@ collectionsSecondCaptionSubTitle1.style.fontWeight = "400"
 
 var collectionsSecondCaptionTitle1 = document.createElement("p");
 collectionsSecondCaptionTitle1.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle1.classList.add("text-center");
 collectionsSecondCaptionTitle1.innerText = "Dark Blue Crepe Saree";
 collectionsSecondCaptionTitle1.style.fontSize = "18px"
 collectionsSecondCaptionTitle1.style.fontWeight = "300"
@@ -1294,6 +1299,7 @@ collectionsSecondCaptionSubTitle2.style.fontWeight = "400"
 
 var collectionsSecondCaptionTitle2 = document.createElement("p");
 collectionsSecondCaptionTitle2.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle2.classList.add("text-center");
 collectionsSecondCaptionTitle2.innerText = "Dark Blue Crepe Saree";
 collectionsSecondCaptionTitle2.style.fontSize = "18px"
 collectionsSecondCaptionTitle2.style.fontWeight = "300"
@@ -1349,6 +1355,7 @@ collectionsSecondCaptionSubTitle3.style.fontWeight = "400"
 
 var collectionsSecondCaptionTitle3 = document.createElement("p");
 collectionsSecondCaptionTitle3.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle3.classList.add("text-center");
 collectionsSecondCaptionTitle3.innerText = "Dark Blue Crepe Saree";
 collectionsSecondCaptionTitle3.style.fontSize = "18px"
 collectionsSecondCaptionTitle3.style.fontWeight = "300"
@@ -1404,6 +1411,7 @@ collectionsSecondCaptionSubTitle4.style.fontWeight = "400"
 
 var collectionsSecondCaptionTitle4 = document.createElement("p");
 collectionsSecondCaptionTitle4.setAttribute("class","collectionsSecond__image--captionTitle");
+collectionsSecondCaptionTitle4.classList.add("text-center");
 collectionsSecondCaptionTitle4.innerText = "Dark Blue Crepe Saree";
 collectionsSecondCaptionTitle4.style.fontSize = "18px"
 collectionsSecondCaptionTitle4.style.fontWeight = "300"
